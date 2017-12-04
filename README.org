@@ -1,5 +1,10 @@
 * Siren RPG
 
+** Downloads and Compilation
+You can find the latest compiled PDF [[https://github.com/ElectricCoffee/SirenRPG/releases][here]]
+
+If you instead prefer to compile from source, you need a LaTeX compiler with a package manager. TeXLive works well.
+
 ** Premise
    The idea here is to make a system that is
    1. Simple enough to be pick-up and play.
@@ -22,7 +27,7 @@
 
 *** Setting Neutral
     The system should be usable regardless of the setting and genre of the game played.
-    It should be dynamic enough to fit Noir, Sci-Fi, Adventure, Fantasy, \&c.
+    It should be dynamic enough to fit Noir, Sci-Fi, Adventure, Fantasy, etc.
 
 *** Extensible
     Lastly, it should be extensible. 
