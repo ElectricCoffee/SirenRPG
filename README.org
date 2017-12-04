@@ -29,3 +29,13 @@
     Everything in this guide is only meant to be preliminary, if anything needs to be thrown out or replaced, then the player may do so if they wish. 
     Does hacking apply better to the setting than burglary? 
     Then replace one with the other.
+
+** Collaboration
+   I wanted this to be an open source project from the start, and make it freely available to anyone interested.
+  
+   Anyone who wishes to collaborate is free to do so, but keep in mind that any additions need to follow the basic premise.
+   I don't want to end up with a rulebook 500 pages long by the end of it all, since that defeats the purpose of something learnable in (about) an afternoon.
+
+*** If you wish to collaborate
+    Please feel free to submit an /issue/ if you feel something is poorly explained, or add a /pull request/ if you want to add something to the system.
+    I am open for new ideas!
