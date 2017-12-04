@@ -1,0 +1,49 @@
+\documentclass[a4paper]{book}
+\input{preamble.tex}
+
+\title{Siren - Simple RPG Engine $\alpha1.0.0$\\(Working Title)}
+\author{Niko Lepka}
+\date{November 2017}
+
+\begin{document}
+
+\maketitle
+
+\chapter*{Preface}
+\section*{What is Siren?}
+Siren, the \textbf{Si}mple \textbf{R}PG \textbf{En}gine, is an RPG system that aims at being simple and easy to learn without also compromising on the expressiveness of the system.
+
+An RPG engine, much like a video game engine, is a framework on which you can build your own system. If any of the rules in this seem like they don't \textit{quite} fit what you need, you're free to change them for your campaign
+
+\section*{What are RPGs?}
+Role Playing Games, or RPGs for short, are games in which you take the role of some character and act in their stead.
+You may know this from video games, where you play some adventurer in a medieval land full of magic and dragons; or where you play a person that's trying to survive in a nuclear wasteland, fighting mutants and warring factions.
+But RPGs date back before that.
+
+Traditional RPGs, also known as \textit{Tabletop RPGs} or \textit{Pen and Paper RPGs} date back to the early 1970s.
+It's a social game played with a group of friends around a table, mutually telling a common story of great adventure, mysticism, space warfare or whatever they can come up with.
+
+\section*{Who is this for?}
+Some role-playing systems have hundreds of books and rules, so many so that it's hard to remember them all, and valuable playtime is spent looking up rules. 
+While other systems have so few and vague, that a lot of playtime is spent arguing about which rules apply to a given situation.
+
+Siren is made for those players who wish to have a small yet precise set of rules that can be used in every type of story, whether it's a grand space opera, or high fantasy, Siren's got you covered.
+
+\section*{Conventions}
+This book uses standard RPG dice notation, which looks like this: $AdX\pm L$, where $A$ is the number of dice, $X$ is the number of faces on the die, and $L$ is the value added or subtracted after the roll, so $3d6+8$ means roll three six-sided dice, and add 8 to the result.
+\paragraph{Note} Notes are displayed like this, and often convey important information to the player or GM regarding a certain mechanic.
+\paragraph{Example} Examples are displayed like this, and show a situation in which something is used.
+
+\tableofcontents
+
+\input{chapters/basics.tex}
+\input{chapters/game-creation.tex}
+\input{chapters/character-creation.tex}
+\input{chapters/traits.tex}
+\input{chapters/skills.tex}
+\input{chapters/exploits.tex}
+\input{chapters/magic.tex}
+\input{chapters/combat.tex}
+
+\input{chapters/appendix.tex}
+\end{document}
