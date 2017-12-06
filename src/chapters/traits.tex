@@ -29,8 +29,8 @@ The derived traits are all based on the core traits, and therefore cannot be cho
     \textbf{Trait} & \textbf{Calculation} \\\hline
     Health ($HP$)  & $Con\times 2$ \\
     Fatigue ($FP$) & $Str+Con$ \\
-    Parry          & $\lfloor Fighting/2 \rfloor$\\
-    Speed \& Dodge & $\lfloor Athletics / 2 \rfloor$ \\
+    Parry          & $Fighting/2$, rounded down\\
+    Speed \& Dodge & $Athletics / 2$, rounded down\\
 \end{tabular}
     \caption{Derived Traits}
     \label{fig:derived_traits}
