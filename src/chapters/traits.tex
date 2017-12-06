@@ -26,12 +26,24 @@ The derived traits are all based on the core traits, and therefore cannot be cho
 \begin{figure}[!ht]
     \centering
 \begin{tabular}{r | l}
-    \textbf{Trait}    & \textbf{Calculation} \\\hline
-    Health ($HP$)     & $Con\times 2$ \\
-    Fatigue ($FP$)    & $Str+Con$ \\
-    Parry             & $\lfloor Fighting/2 \rfloor$\\
+    \textbf{Trait} & \textbf{Calculation} \\\hline
+    Health ($HP$)  & $Con\times 2$ \\
+    Fatigue ($FP$) & $Str+Con$ \\
+    Parry          & $\lfloor Fighting/2 \rfloor$\\
     Speed \& Dodge & $\lfloor Athletics / 2 \rfloor$ \\
 \end{tabular}
     \caption{Derived Traits}
     \label{fig:derived_traits}
 \end{figure}
+
+\section{Trait Saves}
+Sometimes when a situation calls for it, you need to roll what's called a \textit{Trait Save}.
+Trait saves are where you roll against your trait rather than your skill to affect the outcome of a certain situation.
+
+A trait save is always $2 \times \mathit{affected\ trait}$, regardless of the trait.
+Trait saves are different from \textit{Skill Rolls} (see chapter \ref{chap:skills}) in that they only make use of a single trait, and are not subject to modifiers.
+
+\paragraph{Example} Mark is on the brink of collapse.
+He's lost a lot of blood in the battle against the mob boss.
+His \textit{Constitution} is at 6, and needs to roll a \textit{Constitution Save} ($Con \times 2 = 12$) to not faint from blood loss.
+He rolls a 2, a 6, and a 5, a total of 13. He collapses and faints.
