@@ -68,7 +68,7 @@ The graph above shows the probability of succeeding a skill roll. If your charac
 \section{Weapons} \label{sec:weapons}
 \subsection{Melee Weapons}
 \begin{center}
-\begin{tabular}{c | c | c | c | c | c}
+\begin{tabular}{c|c|c|c|c|c}
     \textbf{Category} & \textbf{Name} & \textbf{Class} & \textbf{Damage} & \textbf{Damage Type} & \textbf{Range} \\\hline
     Unarmed  & Fists          & Light & d6-2 & Crushing & Close/1\\
              & Feet           & Light & d6-1 & Crushing & Close/1\\\hline
@@ -84,14 +84,17 @@ The graph above shows the probability of succeeding a skill roll. If your charac
 
 \subsection{Ranged Weapons}
 \begin{center}
-\begin{tabular}{c | c | c | c | c}
-    \textbf{Category} & \textbf{Name} & \textbf{Damage} & \textbf{Damage Type} & \textbf{Range} \\\hline
-    Primitive & Rock        & d6-1  & Crushing & $Shooting \times 2$  \\\hline
-    Medieval  & Short Bow   & d6+1  & Piercing & $Shooting \times 15$ \\
-              & Long Bow    & d6+2  & Piercing & $Shooting \times 20$ \\\hline
-    Modern    & Pistol      & 2d6+2 & Crushing & 1'867 \\
-              & Shotgun     & 5d6   & Crushing & 100 \\\hline
-    Future    & Laser Gun   & 6d6   & Piercing & 
+\begin{tabular}{c|c|c|c|c}
+    \textbf{Category} & \textbf{Name} & \textbf{Damage} & \textbf{Damage Type} & \textbf{Accurate Range} \\\hline
+    Primitive & Rock        & d6-1  & Crushing & $0.5 \times Shooting + Prof$  \\\hline
+    Medieval  & Short Bow   & d6+1  & Piercing & $Shooting + Prof$ \\
+              & Long Bow    & d6+2  & Piercing & $2 \times Shooting + Prof$ \\\hline
+    Modern    & Pistol      & 2d6+2 & Crushing & 56m \\
+              & Shotgun     & 5d6   & Crushing & 3m \\\hline
+    Future    & Laser Gun   & 6d6   & Piercing & 66m \\
 \end{tabular}
 \end{center}
+\paragraph{Note} These ranges are for when you want to shoot without a range penalty.
+So despite the fact that a pistol can shoot around 1800m, it's incredibly hard to do so.
+
 \section{Armour}
