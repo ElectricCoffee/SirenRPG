@@ -18,23 +18,14 @@ Simple combat is the most straightforward, and involves nothing more than your c
 
 Advanced combat, on the other hand, uses a battle mat divided into squares. This mat is used to communicate the exact position of characters and NPCs, and helps visualise movement and trajectories on the battlefield.
 
-\subsection{Active Defence}
-Active defence differs from the \textit{Defend} action in that it occurs on the attacker's turn.
-There are two things a character can do when actively defending:
-\begin{enumerate}
-    \item \textbf{Dodge.} Roll against your \textit{Move} trait.
-    \item \textbf{Parry.} Roll against half of your weapon skill, rounded down.
-\end{enumerate}
-You get an additional $+2$ to your roll if you also choose to move out of the way of the attack.
-
 \newpage
 \section{Simple Combat}
 
 \subsection{Attack (Melee)}
 \begin{enumerate}
     \item Roll against the appropriate weapon skill.
-    \item If you succeed, the opponent gets to roll active defence.
-    \item If the defence fails, roll for damage for the appropriate weapon.
+    \item If you succeed, the opponent gets to roll active defence (see chapter~\ref{chap:defence}).
+    \item If the defence fails, or succeeds with less, roll for damage for the appropriate weapon.
 \end{enumerate}
 
 \subsection{Attack (Ranged)}
