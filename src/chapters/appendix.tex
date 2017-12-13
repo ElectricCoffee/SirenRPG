@@ -68,30 +68,46 @@ The graph above shows the probability of succeeding a skill roll. If your charac
 \section{Weapons} \label{sec:weapons}
 \subsection{Melee Weapons}
 \begin{center}
-\begin{tabular}{c | c | c | c | c | c}
+\begin{tabular}{c|c|c|c|c|c}
     \textbf{Category} & \textbf{Name} & \textbf{Class} & \textbf{Damage} & \textbf{Damage Type} & \textbf{Range} \\\hline
-    Unarmed  & Fists          & Light & d6-2  & Crush & Close/1\\
-             & Feet           & Light & d6-1  & Crush & Close/1 \\\hline
-    Medieval & Short Sword    & Light & d6    & Slash & Close/1 \\
-             & Long Sword     & Heavy & d6+1  & Slash & 1 to 2 \\
-             & Mace           & Heavy &  TBD  & Crush & Close/1\\\hline
-    Modern   & Baseball Bat   & Heavy &  TBD  & Crush & Close/1\\
-             & Aluminium Bat  & Light &  TBD  & Crush & Close/1\\
-             & Brass Knuckles & Light &  TBD  & Crush & Close/1\\\hline
-    Future   & Beam Sword     & Light &  TBD  & Slash & Close/1
+    Unarmed  & Fists          & Light & d6-2 & Crushing & Close/1\\
+             & Feet           & Light & d6-1 & Crushing & Close/1\\\hline
+    Medieval & Short Sword    & Light & d6   & Slashing & Close/1\\
+             & Long Sword     & Heavy & d6+2 & Slashing & 1 to 2 \\
+             & Mace           & Heavy & d6+2 & Crushing & Close/1\\\hline
+    Modern   & Baseball Bat   & Heavy & d6+1 & Crushing & Close/1\\
+             & Aluminium Bat  & Light & d6+1 & Crushing & Close/1\\
+             & Brass Knuckles & Light & d6-1 & Crushing & Close/1\\\hline
+    Future   & Beam Sword     & Light & d6+3 & Slashing & Close/1
 \end{tabular}
 \end{center}
 
 \subsection{Ranged Weapons}
 \begin{center}
-\begin{tabular}{c | c | c | c | c}
-    \textbf{Category} & \textbf{Name} & \textbf{Damage} & \textbf{Damage Type} & \textbf{Range} \\\hline
-    Primitive & Rock        &  TBD  & Crush  & $Traits \times 2$ \\\hline
-    Medieval  & Short Bow   & d6+1  & Pierce & $Traits \times 15$ \\
-              & Long Bow    & d6+2  & Pierce & $Traits \times 20$ \\\hline
-    Modern    & Pistol      & 2d6+2 & Crush  & 1'867 \\
-              & Shotgun     & 5d6   & Crush  & 100 \\\hline
-    Future    & Laser Gun   &       & Pierce & 
+\begin{tabular}{c|c|c|c|c}
+    \textbf{Category} & \textbf{Name} & \textbf{Damage} & \textbf{Damage Type} & \textbf{Accurate Range} \\\hline
+    Primitive & Rock        & d6-1  & Crushing & $0.5 \times Shooting + Prof$  \\\hline
+    Medieval  & Short Bow   & d6+1  & Piercing & $Shooting + Prof$ \\
+              & Long Bow    & d6+2  & Piercing & $2 \times Shooting + Prof$ \\\hline
+    Modern    & Pistol      & 2d6+2 & Crushing & 56m \\
+              & Shotgun     & 5d6   & Crushing & 3m \\\hline
+    Future    & Laser Gun   & 6d6   & Piercing & 66m \\
 \end{tabular}
 \end{center}
+\paragraph{Note} These ranges are for when you want to shoot without a range penalty.
+So despite the fact that a pistol can shoot around 1800m, it's incredibly hard to do so.
+
 \section{Armour}
+\begin{center}
+\begin{tabular}{c|c|c|c}
+\textbf{Category} & \textbf{Name}  & \textbf{PD} & \textbf{DR}\\\hline
+         Medieval & Learther       & 1 & 1 \\
+                  & Half Plate     & 2 & 2 \\
+                  & Full Plate     & 4 & 3 \\
+                  & Chain Mail     & 1 & 1 \\\hline
+           Modern & Summer Clothes & 0 & 0 \\
+                  & Winter Clothes & 0 & 1 \\
+                  & Kevlar Vest    & 1 & 3 \\\hline
+           Future & Polymer        & 4 & 3 \\
+\end{tabular}
+\end{center}
