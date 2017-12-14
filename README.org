@@ -2,8 +2,10 @@
 
 Note that this engine is still in development! Much of the engine is not finalised yet, and more is still left to be written and added. Please keep this in mind if you want to download and read the rules.
 
+Be sure to check out the [[https://github.com/ElectricCoffee/SirenRPG/wiki][wiki]] if you have questions.
+
 ** Downloads and Compilation
-You can find the latest compiled PDF [[https://github.com/ElectricCoffee/SirenRPG/releases][here]]
+You can find the latest version of the PDF [[https://github.com/ElectricCoffee/SirenRPG/releases][here]]
 
 If you instead prefer to compile from source, you need a LaTeX compiler with a package manager. TeXLive works well.
 
