@@ -18,7 +18,7 @@ The idea here is to make a system that is
 5. Is extensible.
 
 ### Simple Enough to Be Picked up and Played
-    It is important that the system is simple. That anyone can sit down, read the book, and get a somewhat intuitive understanding of how the game is to be played.
+It is important that the system is simple. That anyone can sit down, read the book, and get a somewhat intuitive understanding of how the game is to be played.
 
 ### No Special Dice
 For the sake of accessibility, it's important that regular D6 dice are used for the game.
