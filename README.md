@@ -1,4 +1,4 @@
-![Logo](https://github.com/ElectricCoffee/SirenRPG/src/graphics/svg-logo.png)
+![Logo](https://github.com/ElectricCoffee/SirenRPG/blob/src/graphics/svg-logo.png)
 # Beta 1.1.1
 
 Note that this engine is still in development! Much of the engine is not finalised yet, and more is still left to be written and added. Please keep this in mind if you want to download and read the rules.
