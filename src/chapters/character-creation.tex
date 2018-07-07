@@ -19,18 +19,41 @@ Page 2 is the weapons and equipment page, which keeps track of your weapons, mon
 
 \paragraph{Note} If you can't fit all your character's info, you can write them on the back of the character sheet!
 
-\section{Rolling a Random Character}
+\section{Building a Character}
+\subsection{Experience Points}
+To help you out, you'll get 100 XP to start out (The GM may decide to give more or less XP depending on setting).
+These can be used to purchase skill bonuses and upgrade your traits if you so desire at the beginning of the game.
+Check chapter~\ref{chap:char-prog} for more information about how XP works.
+
 \subsection{Traits}
-If you wish to roll your character's traits, you can do so.
-\begin{enumerate}
-\item Roll 2d6 and discard the lowest die once for every trait (Agi, Cha, Con, Dex, Int, Str, Wis).
-\item \textbf{HP:}    $Con \times 2$
-\item \textbf{FP:}    $Con + Str$
-\item \textbf{MP:}    $Int \times Wis$
-\item \textbf{Def:}   Your character's Passive Defence score, see chapter~\ref{chap:defence} for more info
-\item \textbf{Parry:} $Fighting / 2$, rounded down
-\item \textbf{Speed:} $Athletics / 2$, rounded down
-\end{enumerate}
+Each trait costs its own level in Experience Points, so bringing a trait up to level 3 requires paying 6 XP ($1 + 2 + 3$).
+Note that you cannot exceed a trait level of 10.
+
+The derived traits are calculated like this:
+
+\begin{tabular} {r | l} 
+\textbf{HP:} & $Con \times 2$ \\
+\textbf{FP:} & $Con + Str$ \\
+\textbf{MP:} & $Int \times Wis$ \\
+\textbf{Def:} & Your character's Passive Defence score, see Chapter~\ref{chap:defence} for more info \\
+\textbf{Parry:} & $Fighting / 2$, rounded down \\
+\textbf{Speed:} & $Athletics / 2$, rounded down \\
+\end{tabular}
+
+\paragraph{Example} A character with the traits set up like this:
+
+\begin{tabular}{r | l}
+    \textbf{Agi} & 6\\
+    \textbf{Cha} & 4\\
+    \textbf{Con} & 5\\
+    \textbf{Dex} & 6\\
+    \textbf{Int} & 5\\
+    \textbf{Str} & 4\\
+    \textbf{Wis} & 3\\
+\end{tabular}
+
+Would cost 98 XP to build.
+Note that a value of 5 is considered "average".
 
 \paragraph{Note} Parry and Athletics are skills, covered in chapter~\ref{chap:skills}.
 For Parry, the parrying ability depends on the fighting skill you're currently using.
@@ -38,12 +61,7 @@ For Parry, the parrying ability depends on the fighting skill you're currently u
 \subsection{Skills}
 Calculate your character's skills based on their traits as shown in the skill listing on your character sheet.
 Think about what your character is particularly good at, these skills can be what your character specialises in.
-These specialisations---or proficiencies---follow the \textit{Experience Points} section below.
-
-\subsection{Experience Points}
-To help you out, you'll get 8 XP to start out.
-These can be used to purchase skill bonuses and upgrade your traits if you so desire at the beginning of the game.
-Check chapter~\ref{chap:char-prog} for more information about how XP works.
+These specialisations---or proficiencies---follow the \textit{Experience Points} section above.
 
 \subsection{Exploits}
 You may come up with up to one exploit during character creation (you have the option to add more as your character progresses).
