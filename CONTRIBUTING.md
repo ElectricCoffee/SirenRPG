@@ -4,7 +4,7 @@ The contribution guide is for those who want to contribute to the Siren RPG proj
 This guide is here to help!
 
 First off, you need a GitHub account to contribute (sorry).
-You can join GitHub [[https://github.com/join][here]].
+You can join GitHub [here](https://github.com/join).
 
 ## Before You Contribute
 Read through the premise guide on the front page of the project.
@@ -20,7 +20,7 @@ If anything, your idea might actually get added!
 
 ## I want to contribute directly
 If you want to contribute directly to the source of the project, you have to do a few things:
-1. Make a /fork/ of the project
+1. Make a _fork_ of the project
 2. Make your changes to the fork
 3. Make sure it actually compiles and produces a usable PDF
 4. Submit a [pull request](https://github.com/ElectricCoffee/SirenRPG/pulls)
