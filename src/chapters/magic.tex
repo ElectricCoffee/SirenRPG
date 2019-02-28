@@ -16,7 +16,7 @@ Whether the powers were given to you, or you were born with them, doesn't matter
 
 \section{Spells}
 Spells come in many different forms: utility, healing, hurting, elemental, bionic etc.
-Every spell has an associated mana cost, and cannot be used if this cost is exceeded.
+Every spell has an associated mana cost, which consumes a bit of your total mana on each use (see Section~\ref{sec:mana}).
 
 It's up to the players and the GM to decide the kinds of spells that exist within the game, and whether they're too game breaking or not.
 Examples of spells include:
@@ -39,10 +39,14 @@ Depending on the exact nature of that spell, these three casting methods can hav
 Casting it around you creates a bubble around you that can shield yourself and your friends.
 While casting it away from you can create a wall to shield something/someone further away.
 
-\section{Mana}
-Every character has a mana pool $Int \times Wis$ in size.
+\section{Mana}\label{sec:mana}
+Every character has a mana pool $Int \times Wis$ in size, which represents the amount of magical potential your character can tap into without straining themselves.
 In other words, if your character has 5 Int, and 6 Wis, they have 30 Mana Points (MP).
 Every spell has an associated mana cost, and using it drains the mana pool accordingly.
+
+\subsection{Running Out of Mana}
+When you run out of mana, your can still cast spells!
+However, instead of draining mana, your character will instead accumulate 2 Fatigue Points (FP) for every point of mana attempted to use.
 
 \section{Casting a Spell}
 Casting a spell requires two things: A skill roll, and enough mana.
