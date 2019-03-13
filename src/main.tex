@@ -6,22 +6,17 @@
 \begin{titlepage}
 \begin{center}
   \includegraphics[width = \textwidth]{graphics/svg-logo.png}
-  \LARGE{$\beta1.5.0$ --- By Niko Lepka}\\
+  \LARGE{$\beta1.5.1$ --- By Niko Lepka}\\
   \Large{\today}
 \end{center}
 \end{titlepage}
-% this part adds an empty page after the title page. DO NOT REMOVE
-\newpage
-\null
-\pagestyle{empty}
-\newpage
-\pagenumbering{arabic} % count pages from here.
-
+\thispagestyle{empty} % removes page number from front page
+\frontmatter % adds Roman numerals to the preface chapter
 \chapter*{Preface}
 \section*{What is Siren?}
 Siren, the \textbf{Si}mple \textbf{R}PG \textbf{En}gine, is a free and open source RPG system that aims at being simple and easy to learn without also compromising on the expressiveness of the system.
 
-An RPG engine, much like a video game engine, is a framework on which you can build your own system. If any of the rules in this seem like they don't \textit{quite} fit what you need, you're free to change them for your campaign
+An RPG engine, much like a video game engine, is a framework on which you can build your own system. If any of the rules in this seem like they don't \textit{quite} fit what you need, you're free to change them for your campaign.
 
 \section*{What are RPGs?}
 Role Playing Games, or RPGs for short, are games in which you take the role of some character and act in their stead.
@@ -61,7 +56,7 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 To view a copy of this license, visit \texttt{http://creativecommons.org/licenses/by-sa/4.0/} or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 \tableofcontents
-
+\mainmatter % adds Arabic numbers to the main chapters
 \input{chapters/basics.tex}
 \input{chapters/game-creation.tex}
 \input{chapters/character-creation.tex}
