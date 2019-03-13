@@ -47,5 +47,5 @@ Anyone who wishes to collaborate is free to do so, but keep in mind that any add
 I don't want to end up with a rulebook 500 pages long by the end of it all, since that defeats the purpose of something learnable in (about) an afternoon.
 
 ### If you wish to collaborate
-Please feel free to submit an /issue/ if you feel something is poorly explained, or add a /pull request/ if you want to add something to the system.
+Please feel free to submit an _issue_ if you feel something is poorly explained, or add a _pull request_ if you want to add something to the system.
 I am open for new ideas!
