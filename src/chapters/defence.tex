@@ -8,29 +8,30 @@ For this, there are three different things that might help you out: damage resis
 % Rewrite "active" and "passtive" defence to be a single section about simply "defending", maybe later rope it in as a subsection under combat.
 % keep going
 
-\section{Actively Defending}
-Active defence (AD), is performed by your character during combat.
+\section{Defending}
+Defence, is performed by your character during combat.
 This refers to actions like dodging, blocking, or parrying an attack.
-More often than not, active defences have a very low chance of success, but also have a very high reward, as they make it possible to completely avoid all damage from an attack.
+Note that blocking and parrying are treated as the same type of action, since blocking with a sword and parrying with a shield mechanically act the same way.
+More often than not, defensive moves have a lower chance of success, but also have a very high reward, as they make it possible to completely avoid all damage from an attack.
 
-There are two things a character can do when actively defending:
+There are two things a character can do when defending:
 \begin{enumerate}
-    \item \textbf{Dodge.} Roll against your \textit{Speed} trait + Defence Bonus.
-    \item \textbf{Parry.} Roll against half of your weapon/fighting skill, rounded down + Defence Bonus.
+    \item \textbf{Dodge.} Roll against your \textit{Speed} trait $+ \mathit{DfM}$.
+    \item \textbf{Parry.} Roll against half of your weapon/fighting skill, rounded down $+ \mathit{DfM}$.
 \end{enumerate}
 You get an additional $+2$ to your roll if you also choose to move out of the way of the attack.
 
-\section{Defence Modifier}
-Defence modifier (DfM), is defence modifier gained from your armour.
-Generally, thicker armour usually grants a bigger passive defence bonus.
-The passive defence is added to your active defence score when performing a defence roll.
+\subsection{Defence Modifier}
+The Defence Modifier (DfM), is a modifier gained from your armour and equipment which is then added or subtracted from your defence move.
+It is important to note, that the DfM only applies to your defensive actions, and does not offer any damage resistance. 
+For that, please refer to Section~\ref{sec:damage-resistance}.
 
 \paragraph{Example} Jean has been challenged by a rival clan's champion, who is charging at him, claymore raised high.
 Jean's dodge is 6, his leather armour and buckler give him 1 PD each.
 Added together, it gives him an effective defence of 8, which he then needs to roll against to evade the foe.
 He rolls an 8! He slips right past his opponent, deflecting the claymore with his buckler.
 
-\section{Damage Resistance}
+\section{Damage Resistance}\label{sec:damage-resistance}
 Damage resistance (DR), is something that always applies, whether your character is aware of the attack or not.
 Damage resistance is granted by certain armour, shields, and potions, and reduce some of the damage your character takes when hit.
 Simply put: if your character has 2 points of damage resistance, then they take 2 points of damage fewer than they otherwise would.
