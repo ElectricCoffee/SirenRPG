@@ -4,26 +4,26 @@ Let's face it, taking damage isn't fun, but unfortunately, it's a natural and al
 Luckily, there are ways to avoid, or at least mitigate some of the damage taken.
 For this, there are three different things that might help you out: damage resistance, and active and passive defence.
 
-% Todo:
-% Rewrite "active" and "passtive" defence to be a single section about simply "defending", maybe later rope it in as a subsection under combat.
-% keep going
-
 \section{Defending}
-Defence, is performed by your character during combat.
+Defence, is performed by your character during the \textit{reactive phase} of combat.
 This refers to actions like dodging, blocking, or parrying an attack.
 Note that blocking and parrying are treated as the same type of action, since blocking with a sword and parrying with a shield mechanically act the same way.
-More often than not, defensive moves have a lower chance of success, but also have a very high reward, as they make it possible to completely avoid all damage from an attack.
+More often than not, defensive actions have a lower chance of success, but also have a very high reward, as they make it possible to completely avoid all damage from an attack.
 
 There are two things a character can do when defending:
 \begin{enumerate}
     \item \textbf{Dodge.} Roll against your \textit{Speed} trait $+ \mathit{DfM}$.
+        On success, this negates the damage from the entirety of the assailant's proactive phase.
     \item \textbf{Parry.} Roll against half of your weapon/fighting skill, rounded down $+ \mathit{DfM}$.
+        On success, this negates the damage from a single attack of your choice.
 \end{enumerate}
 
-\paragraph{Note} As outlined in Section~\ref{sec:move-and-defend}, you get an additional $+2$ to your roll if you also choose to move out of the way of the attack, but doing so takes up your entire turn.
+\paragraph{Note} As outlined in Section~\ref{sec:phases}, if you moved in your last proactive phase, you get a +2 to your \textit{Dodge} attempt during this reactive phase. 
+If you \textit{Brace} once in your last proactive phase, you get a $+2$ to any defensive action during this reactive phase; bracing twice gives a $+4$. 
+If applicable, these bonuses can stack.
 
-\subsection{Defence Modifier}
-The Defence Modifier (DfM), is a modifier gained from your armour and equipment which is then added or subtracted from your defence move.
+\subsection{Defence Modifier (DfM)}
+The Defence Modifier, is a modifier gained from your armour and equipment which is then added or subtracted from your defence move.
 It is important to note, that the DfM only applies to your defensive actions, and does not offer any damage resistance. 
 For that, please refer to Section~\ref{sec:damage-resistance}.
 
@@ -34,8 +34,8 @@ In order to maximise his defensive modifier, Jean decides to parry the attack wh
 Jean then rolls an 8, successfully parrying and avoiding any damage.
 However, this ends Jean's turn.
 
-\section{Damage Resistance}\label{sec:damage-resistance}
-Damage resistance (DR), is something that always applies, whether your character is aware of the attack or not.
+\section{Damage Resistance (DR)}\label{sec:damage-resistance}
+Damage Resistance, is something that always applies, whether your character is aware of the attack or not.
 Damage resistance is granted by certain armour, shields, and potions, and reduce some of the damage your character takes when hit.
 Simply put: if your character has 2 points of damage resistance, then they take 2 points of damage fewer than they otherwise would.
 

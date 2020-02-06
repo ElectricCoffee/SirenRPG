@@ -35,7 +35,7 @@ A highly charismatic character can talk their way into or out of almost any situ
 So whether your character is a sleazy con-artist, a performer, or a suave secret agent, Charisma is likely an important trait for you to consider.
 
 \subsection{Consitution (Con)}
-Consitution determines your character's health, their stamina, and their \textit{inner strength}, in other words: your character's general stubbornness.
+Consitution determines your character's health, their stamina, and their willpower, in other words: your character's general stubbornness.
 Constitution is the core trait in everything to do with physical and mental health, and has a key role in a number of skills related to yours and other people's survival.
 
 If your character is a medic, a ranger, or needs to tank a lot of hits, then Constitution is a good priority choice.
@@ -69,13 +69,14 @@ The derived traits are all based on the core traits, and therefore cannot be cho
     \centering
 \begin{tabular}{r | l}
     \textbf{Trait} & \textbf{Calculation} \\\hline
-    Fatigue ($FP$) & $Str+Con$ \\
-    Health  ($HP$) & $Con+Con$ \\
+    Health  ($HP$) & $Con\times 2$ \\
+    Fatigue ($FP$) & $Str + Con$ \\
     Mana    ($MP$) & $Int\times Wis$ \\
-    Parry          & $Fighting/2$, rounded down\\
-    Speed \& Dodge & $Athletics / 2$, rounded down\\
+    Speed          & $Athletics / 2$, rounded down\\
+    Parry          & $Fighting/2$, rounded down $+ \mathit{DfM}$\\
+    Dodge          & $Speed + \mathit{DfM}$
 \end{tabular}
-    \caption{Derived Traits}
+    \caption{Derived Traits. (See Chapter~\ref{chap:defence} for $\mathit{DfM}$)}
     \label{fig:derived_traits}
 \end{figure}
 
@@ -97,7 +98,6 @@ Running out of mana runs the risk of exhausting your character, so use it effect
 More about mana and how to use it in Section~\ref{sec:mana}
 
 \subsection{Parry}
-Fighting is your character's ability to fight.
 This derived trait is a bit different from the others, in that it's based on your character's \textit{currently active Fighting skill}.
 In other words, you use \textit{Fighting (Light)} if unarmed or using a light weapon, and \textit{Fighting (Heavy)} if using a heavy weapon.
 More on parrying in Chapter~\ref{chap:defence}.
