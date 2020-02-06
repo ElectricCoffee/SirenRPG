@@ -39,8 +39,8 @@ The in-game size of a square is $1m^2$, although the GM may scale it up or down 
 The GM must alert the players of the scale if it differs from the standard $1m^2$.
 
 \newpage
-\subsection{Phases}
-Combat in Siren is split into two distinct phases: \textit{Proactive} and \textit{Reactive}.
+\subsection{Phases}\label{sec:phases}
+Turns in Siren is split into two distinct phases: \textit{Proactive} and \textit{Reactive}.
 
 The phases are structured as follows:
 \begin{enumerate}
@@ -50,15 +50,22 @@ The phases are structured as follows:
 \end{enumerate}
 
 \subsubsection{Proactive Phase}
-The proactive phase is what you would think of as ``your turn'', during your turn you can pick any two of the following actions: \textit{Moving}, \textit{Bracing}, or \textit{Attacking}.
+The proactive phase is what you would think of as ``your turn'', during your proactive phase you can pick any two of the following actions: \textit{Moving}, \textit{Bracing}, or \textit{Attacking}.
 If however, your character is performing a non-combat action (such as picking a lock), this takes up the entire proactive phase.
 
 \paragraph{Move}
 Movement means your character can move up to half their speed-rating.
+
 \paragraph{Brace}
 Your character takes a defensive stance and gets $+2$ to any defence rolls this turn.
+
 \paragraph{Attack}
 You character gets to roll an attack.
+
+If your character performs a ranged attack, you need to check the weapon's range.
+The skill check to attack is done at $-3$ for every time the range of the weapon is exceeded.
+
+\paragraph{Ranged Attack Example} Will the Ranger is out hunting for his party. He spots a deer in the distance. His bow has a range of 100 metres, the deer is 300 metres away. This exceeds the bow's range twice ($2\times -3$ penalty). Will must roll $Longbow-6$ to succeed.
 
 \paragraph{Note} In the proactive phase, your character can pick the same option twice.
 
@@ -74,40 +81,13 @@ Note that this means if you didn't move or brace yourself in the previous turn, 
 \paragraph{Counter-Attack}
 Instead of moving or defending, you may simply initiate an attack in response.
 
-\subsection{Actions}
-
-\textbf{Alex, this is part of the old write-up, that I've left in because of time.}
-
-\subsubsection{Move \& Attack (Melee)}
-\begin{enumerate}
-    \item Move up to half your movement (rounded down) before or after attacking.
-    \item Roll against the appropriate weapon skill.
-    \item If you succeed, the opponent gets to roll active defence (see Chapter~\ref{chap:defence}).
-    \item If the defence fails, or succeeds by less, roll for damage for the appropriate weapon.
-\end{enumerate}
-
-\subsubsection{Move \& Attack (Ranged)}
-\begin{enumerate}
-    \item Move up to half your movement (rounded down) before or after attacking.
-    \item Calculate effective skill level.
-        \begin{enumerate}
-            \item If target is within weapon's range, do nothing else.
-            \item Subtract 3 points every time you exceed the range.
-        \end{enumerate}
-    \item Roll to attack, using the modified skill.
-    \item If you succeed, the opponent may roll to dodge.
-    \item If the dodge fails, roll for damage.
-\end{enumerate}
-
-\paragraph{Example} Will the Ranger is out hunting for his party. He spots a deer in the distance. His bow has a range of 100 metres, the deer is 300 metres away. This exceeds the bow's range twice ($2\times -3$ penalty). Will must roll $Longbow-6$ to succeed.
-
 \section{Taking Damage}
 It's not uncommon that you take damage during combat.
 After all, having an angry wizard throw fireballs at you is going to hurt!
 This section describes the ways in which damage is taken, and what the consequences are.
 See Chapter~\ref{chap:defence} for more info about damage resistance.
 
-\subsection{Health Points}\label{sec:health-points}
+\subsection{Health Points (HP)}\label{sec:health-points}
 Every character has a number of Health Points (HP).
 The amount of HP a player has determines the player's level of consciousness:
 
@@ -116,30 +96,29 @@ The amount of HP a player has determines the player's level of consciousness:
     \textbf{HP Left} & \textbf{Effect} \\\hline
     $HP > 0$         & Alive and able to fight. \\
     $HP \leq 0$      & Roll against $2 \times Con$ to see if you faint. \\
-    $HP \leq -HP$    & Roll against $2 \times Con$ to see if you die.
+    $HP \leq -MaxHP$ & Roll against $2 \times Con$ to see if you die.
   \end{tabular}
 \end{center}
 
-\paragraph{Note} $-HP$ here refers to the negative of your max-HP.
-In other words, if your character has 12 HP, $-HP = -12$
+\paragraph{Note} Rolling against your $HP$ happens at the start of your turn.
   
-\subsection{Fatigue Points}\label{sec:fatigue-points}
+\subsection{Fatigue Points (FP)}\label{sec:fatigue-points}
 Fatigue is a different kind of damage.
 One that affects you character more directly.
 There are many different sources of fatigue: heat, starvation, dehydration, sleep deprivation, etc.
 
-For every point of Fatigue Damage (FD) taken, your character suffers a $-1$ penalty on all skill rolls.
+For every point of Fatigue lost, your character suffers a $-1$ penalty on all skill rolls.
 
 \begin{center}
   \begin{tabular}{r | l}
     \textbf{FD Taken} & \textbf{Effect} \\\hline
-    $FD \geq FP/2$    & Roll against $FP - FD$ to see if you faint. \\
-    $FD \geq FP$      & Immediately faint from exhaustion.
+    $FP \leq MaxFP/2$ & Roll against $MaxFP - FP$ to see if you faint. \\
+    $FP \leq MaxFP$   & Immediately faint from exhaustion.
   \end{tabular}
 \end{center}
 
 \paragraph{Example} Charles has been walking the desert for the past five days.
-The heat is getting to him, and he's taken 5 points of fatigue damage.
+The heat is getting to him, and he's lost 5 points of FP.
 Charles has 10 FP, but due to the damage, he needs to roll 5 or less to not faint in the sand.
 He rolls 9 and immediately collapses.
 
@@ -168,4 +147,4 @@ Healing comes in three different variants:
 \end{center}
 
 \paragraph{Note} Healing refers to both healing Health and Fatigue.
-A cup of coffee, for example, is a fatigue-healing potion that takes about 30 in-game minutes to kick in.
+A cup of coffee, for example, is a fatigue-healing potion that takes about 15 in-game minutes to kick in.
