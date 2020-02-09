@@ -1,0 +1,40 @@
+\section{Taking Damage}
+It's not uncommon that you take damage during combat.
+After all, having an angry wizard throw fireballs at you is going to hurt!
+This section describes the ways in which damage is taken, and what the consequences are.
+See Section~\ref{sec:damage-resistance} for more info about damage resistance.
+
+\subsection{Health Points (HP)}\label{sec:health-points}
+Every character has a number of Health Points (HP).
+The amount of HP a player has determines the player's level of consciousness:
+
+\begin{center}
+  \begin{tabular}{r | l}
+    \textbf{HP Left} & \textbf{Effect} \\\hline
+    $HP > 0$         & Alive and able to fight. \\
+    $HP \leq 0$      & Roll against $2 \times Con$ to see if you faint. \\
+    $HP \leq -MaxHP$ & Roll against $2 \times Con$ to see if you die.
+  \end{tabular}
+\end{center}
+
+\paragraph{Note} Rolling against your $HP$ happens at the start of your turn.
+  
+\subsection{Fatigue Points (FP)}\label{sec:fatigue-points}
+Fatigue is a different kind of damage.
+One that affects you character more directly.
+There are many different sources of fatigue: heat, starvation, dehydration, sleep deprivation, etc.
+
+For every point of Fatigue lost, your character suffers a $-1$ penalty on all skill rolls.
+
+\begin{center}
+  \begin{tabular}{r | l}
+    \textbf{FD Taken} & \textbf{Effect} \\\hline
+    $FP \leq MaxFP/2$ & Roll against $MaxFP - FP$ to see if you faint. \\
+    $FP \leq MaxFP$   & Immediately faint from exhaustion.
+  \end{tabular}
+\end{center}
+
+\paragraph{Example} Charles has been walking the desert for the past five days.
+The heat is getting to him, and he's lost 5 points of FP.
+Charles has 10 FP, but due to the damage, he needs to roll 5 or less to not faint in the sand.
+He rolls 9 and immediately collapses.
