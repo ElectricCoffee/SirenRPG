@@ -86,30 +86,45 @@ The graph above shows the probability of succeeding a skill roll. If your charac
 
 \subsection{Ranged Weapons}
 \begin{center}
-\begin{tabular}{c|c|c|c|c}
+\begin{tabular}{c|c|c|c|l}
     \textbf{Category} & \textbf{Name} & \textbf{Damage} & \textbf{Damage Type} & \textbf{Accurate Range} \\\hline
     Primitive & Rock        & d6-1  & Crushing & $0.5 \times Shooting + Prof$  \\\hline
     Medieval  & Short Bow   & d6+1  & Piercing & $Shooting + Prof$ \\
               & Long Bow    & d6+2  & Piercing & $2 \times Shooting + Prof$ \\\hline
-    Modern    & Pistol      & 2d6+2 & Crushing & 56m \\
-              & Shotgun     & 5d6   & Crushing & 3m \\\hline
+    Modern    & Pistol      & 2d6+2 & Ballistic & 56m \\
+              & Shotgun     & 5d6   & Ballistic & 3m \\\hline
     Future    & Laser Gun   & 6d6   & Piercing & 66m \\
 \end{tabular}
 \end{center}
 \paragraph{Note} These ranges are for when you want to shoot without a range penalty.
 So despite the fact that a pistol can shoot around 1800m, it's incredibly hard to do so.
 
-\section{Armour}
+\section{Armour} \label{sec:armour}
 \begin{center}
-\begin{tabular}{c|c|c|c}
+\begin{tabular}{c|c|c|l}
 \textbf{Category} & \textbf{Name}  & \textbf{DfM} & \textbf{DR}\\\hline
-         Medieval & Leather       & 1 & 1 \\
-                  & Half Plate     & 2 & 2 \\
+         Medieval & Leather        & 1 & 1 to Cr.\\
+                  & Half Plate     & 2 & 2 ex. Ba.\\
                   & Full Plate     & 4 & 3 \\
-                  & Chain Mail     & 1 & 1 \\\hline
+                  & Chain Mail     & 1 & 1 ex. Pi. \& Ba.\\\hline
            Modern & Summer Clothes & 0 & 0 \\
-                  & Winter Clothes & 0 & 1 \\
-                  & Kevlar Vest    & 1 & 3 \\\hline
+                  & Winter Clothes & 0 & 1 ex. Ba.\\
+                  & Kevlar Vest    & 1 & 3 to Ba.\\\hline
            Future & Polymer        & 4 & 3 \\
 \end{tabular}
+\end{center}
+
+\section{Shields} \label{sec:shields}
+\begin{center}
+    \begin{tabular}{c|c|c|c|c|c|l}
+        \textbf{Category} & \textbf{Name} & \textbf{Class} & \textbf{Damage} & \textbf{Damage Type} & \textbf{DfM} & \textbf{DR} \\\hline
+        Medieval & Buckler          & Light & d6-2 & Crushing & 1 & 1 ex. Ba.\\
+                 & Wooden Shield    & Light & d6-1 & Crushing & 2 & 1 ex. Ba.\\
+                 & Spiked Shield    & Heavy & d6+1 & Piercing & 2 & 2 ex. Ba.\\
+                 & Tower Sheield    & Heavy & d6   & Crushing & 4 & 4\\\hline
+        Modern   & Riot Shield      & Light & d6/2 & Crushing & 2 & 1 ex. Ba.\\
+                 & Ballistic Shield & Heavy & d6   & Crushing & 3 & 5\\
+                 & Car Door         & Heavy & d6+3 & Crushing & 3 & 3 ex. Ba.\\\hline
+        Future   & Energy Shield    & Light & 2d6  & Crushing & 5 & 5 ex. Pi \& Sl.
+    \end{tabular}
 \end{center}

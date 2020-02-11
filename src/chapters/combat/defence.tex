@@ -2,21 +2,30 @@
 Defending is performed by your character during the \textit{reactive phase} of combat.
 This refers to actions like dodging, blocking, or parrying an attack.
 Note that blocking and parrying are treated as the same type of action, since blocking with a sword and parrying with a shield mechanically act the same way.
-More often than not, defensive actions have a lower chance of success, but also have a very high reward, as they make it possible to completely avoid all damage from an attack.
+More often than not, defensive actions have a lower chance of success compared to most other skill checks, but also have a very high reward, as they make it possible to completely avoid all damage from an attack.
 
 There are two things a character can do when defending:
 \begin{enumerate}
-    \item \textbf{Dodge.} Roll against your \textit{Speed} trait $+ \mathit{DfM}$.
+    \item \textbf{Dodge.} 
+        Roll against $\mathit{Speed} + \mathit{DfM}$.
         On success, this negates the damage from the entirety of the assailant's proactive phase.
-    \item \textbf{Parry.} Roll against half of your weapon/fighting skill, rounded down $+ \mathit{DfM}$.
+    \item \textbf{Parry.} 
+        Roll against $Parry + Spec.$
         On success, this negates the damage from a single attack of your choice.
+
+        The box on the character sheet is divided in two, one half for parrying based on \textit{Fighting (Hvy)}, and the other for \textit{Fighting (Lgt)}.
 \end{enumerate}
+For all intents and purposes, shields are just treated as armour, but their $\mathit{DfM}$ is \textit{only} added to the \textit{Parry}, unless stated otherwise.
 
 \paragraph{Note} As outlined in Section~\ref{sec:phases}, if you moved in your last proactive phase, you get a +2 to your \textit{Dodge} attempt during this reactive phase. 
 If you \textit{Brace} once in your last proactive phase, you get a $+2$ to any defensive action during this reactive phase; bracing twice gives a $+4$. 
 If applicable, these bonuses can stack.
 
-\subsection{Defence Modifier (DfM)}
+\paragraph{Note} Space is allotted on the character sheet for individual weapons' parry stats.
+
+Furthermore, it is up to the GM to decide what can and cannot be parried with.
+
+\subsection{Defence Modifier (DfM)}\label{sec:defence-modifier}
 The Defence Modifier, is a modifier gained from your armour and equipment which is then added or subtracted from your defence move.
 It is important to note, that the DfM only applies to your defensive actions, and does not offer any damage resistance. 
 For that, please refer to Section~\ref{sec:damage-resistance}.
@@ -37,3 +46,14 @@ Simply put: if your character has 2 points of damage resistance, then they take 
 She wears a steel breastplate, which grants a damage resistance of 3.
 The black knight swings at her and she misses her dodge!
 The black knight's sword damages for 6, but because of her armour's damage resistance, she only takes 3 damage!
+
+\subsection{Damage Types \& Resistance Types}
+In certain scenarios you may want to distinguish between different types of damage such as \textit{piercing}, \textit{slashing}, \textit{crushing}, or \textit{ballistic}.
+
+Armours and shields may have damage types that bypasses their damage reduction or have damage reduction that applies only to specific damage types.
+
+In Appendices~\ref{sec:weapons}~and~\ref{sec:armour} the example weapons and armors have been written to reflect this.
+This is described on the table as \textit{to Type} or \textit{ex. Type}.
+If nothing is listed, it protects against all damage types.
+
+The GM may choose to modify this by either ignoring or expanding the damage types.

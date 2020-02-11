@@ -12,8 +12,8 @@ The amount of HP a player has determines the player's level of consciousness:
   \begin{tabular}{r | l}
     \textbf{HP Left} & \textbf{Effect} \\\hline
     $HP > 0$         & Alive and able to fight. \\
-    $HP \leq 0$      & Roll against $2 \times Con$ to see if you faint. \\
-    $HP \leq -MaxHP$ & Roll against $2 \times Con$ to see if you die.
+    $HP \leq 0$      & Roll against $MaxHP$ to see if you faint. \\
+    $HP \leq -MaxHP$ & Roll against $MaxHP$ to see if you die.
   \end{tabular}
 \end{center}
 
@@ -29,8 +29,8 @@ For every point of Fatigue lost, your character suffers a $-1$ penalty on all sk
 \begin{center}
   \begin{tabular}{r | l}
     \textbf{FD Taken} & \textbf{Effect} \\\hline
-    $FP \leq MaxFP/2$ & Roll against $MaxFP - FP$ to see if you faint. \\
-    $FP \leq MaxFP$   & Immediately faint from exhaustion.
+    $FP \leq MaxFP/2$ & Roll against $FP$ to see if you faint. \\
+    $FP \leq 0$   & Immediately faint from exhaustion.
   \end{tabular}
 \end{center}
 
