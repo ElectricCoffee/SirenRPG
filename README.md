@@ -49,3 +49,8 @@ I don't want to end up with a rulebook 500 pages long by the end of it all, sinc
 ### :thought_balloon: If you wish to collaborate
 Please feel free to submit an _issue_ if you feel something is poorly explained, or add a _pull request_ if you want to add something to the system.
 I am open for new ideas!
+
+## 💵 Donations
+If you wish to make donations for the project, I have setup a few options to help you do so:
+* [Patreon](https://www.patreon.com/sirenRPG) if you wish to give monthly donations.
+* [Ko-fi](https://ko-fi.com/sirenrpg) if you wish to give a single donation.
