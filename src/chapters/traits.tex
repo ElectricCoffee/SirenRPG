@@ -84,17 +84,17 @@ You can find the derived traits on Figure~\ref{fig:derived_traits}.
     \label{fig:derived_traits}
 \end{figure}
 
-\subsection{Fatigue (FP)}
-Fatigue represents how hard your character can exert themselves.
-Every point of fatigue has adverse effects on your character's ability to perform.
-Get too fatigued, and your character faints from exhaustion.
-You can read more about Fatigue as a mechanic in Section~\ref{sec:fatigue-points}.
-
 \subsection{Health (HP)}
 Health represents a character's physical well-being.
 If you have any past experience playing videogames or other RPGs, you know exactly what the purpose of Health is, but for those uninitiated, it is simply a measure of how close to dying your character is.
 Worry not though, getting to zero HP does not instantly mean death!
 More on that in Section~\ref{sec:health-points}.
+
+\subsection{Fatigue (FP)}
+Fatigue represents how hard your character can exert themselves.
+Every point of fatigue has adverse effects on your character's ability to perform.
+Get too fatigued, and your character faints from exhaustion.
+You can read more about Fatigue as a mechanic in Section~\ref{sec:fatigue-points}.
 
 \subsection{Mana (MP)}
 Mana represents your character's magical potential and is used to cast spells (if the setting allows it).
@@ -106,9 +106,12 @@ This is useful if you want to drain your players sanity over the course of campa
 Though if you plan on using mana for that, consider calculating it as $Con \times Wis$ rather than $Int \times Wis$.
 
 \subsection{Parry}
-This derived trait is a bit different from the others, in that it's based on your character's \textit{currently active Fighting skill}.
-In other words, you use \textit{Fighting (Light)} if unarmed or using a light weapon, and \textit{Fighting (Heavy)} if using a heavy weapon.
+The Parry trait lets your character deflect an incoming attack using their fighting ability and/or a weapon.
+This derived trait is a bit different from the others, in that it's based on two different skills \textit{Fighting (Light)} and \textit{Fighting (Heavy)}.
+For this reason, the box on the character sheet is split in two.
 More on parrying in Section~\ref{sec:defence}.
+
+\note For all intens and purposes, parrying and blocking are treated interchangeably.
 
 \subsection{Speed}
 If playing with a battle-mat, the \textit{Speed} trait determines how many squares a character can move per turn.
@@ -118,7 +121,6 @@ More on that in Section~\ref{sec:movement}.
 The Dodge trait determines your character's ability to dodge out of the way of danger. 
 By default it is equal to your character's Speed trait + the appropriate \textit{DfM}.
 More about Dodge in Section~\ref{sec:defence}.
-
 
 \section{Trait Saves}
 Sometimes when a situation calls for it, you need to roll what's called a \textit{Trait Save}.
