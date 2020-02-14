@@ -1,9 +1,13 @@
 \chapter{Traits}
 \section{Introduction}
-Traits are the aspects that define your character. These are things like their brains, their brawn, their fitness, etc. There are two different types of Traits in the game: \textit{Core Traits}, and \textit{Derived Traits}, which are special Traits derived from the core ones.
+Traits are the aspects that define your character. 
+These are things like their brains, their brawn, their fitness, etc. 
+There are two different types of Traits in the game: \textit{Core Traits}, and \textit{Derived Traits}, which are special Traits derived from the core ones.
 \section{Core Traits}
 There are 7 core traits, each with an associated three-letter abbreviation.
-Traits have an associated score, the score determines how good or bad your character will be at certain tasks during the game. You can find the core traits in Figure~\ref{fig:core_traits}.
+Traits have an associated score, the score determines how good or bad your character will be at certain tasks during the game. 
+You can find the core traits in Figure~\ref{fig:core_traits}.
+
 \begin{figure}[!h]
     \centering
     \begin{tabular}{r | l}
@@ -20,22 +24,103 @@ Traits have an associated score, the score determines how good or bad your chara
     \label{fig:core_traits}
 \end{figure}
 
+\subsection{Agility (Agi)}
+Agility represents your character's swiftness, manoeuvrability, and general fitness.
+An agile character naturally lends themselves to speed, be it in terms of running or reaction time.
+
+Agility is a core component in most physical skills; so whether your character is a professional boxer, an athlete, a bouncer, or a courier; Agility is the trait for you.
+
+\subsection{Charisma (Cha)}
+Charisma is your \textit{people skill}.
+It represents your character's general ability to interact with, affect, and manipulate people.
+A highly charismatic character can talk their way into or out of almost any situation, and as such Charisma is a core component in most of the social skills.
+
+Whether your character is a sleazy con-artist, a performer, or a suave secret agent, Charisma is likely an important trait for you to consider.
+
+\subsection{Constitution (Con)}
+Constitution determines your character's health, their stamina, and their willpower, in other words: your character's general stubbornness.
+Constitution is the core trait in everything to do with physical and mental health, and has a key role in a number of skills related to yours and other people's survival.
+
+If your character is a medic, a ranger, or needs to tank a lot of hits, then Constitution is a good priority choice.
+
+\subsection{Dexterity (Dex)}
+Dexterity---or more accurately: \textit{manual} dexterity---governs your character's fine motor skills and ability to skilfully use their hands and fingers.
+Intricate jobs like lock-picking, surgery, and watch-making all lend themselves nicely to a dexterous character, but coarser jobs that also require the use of your hands, like marksmanship and sailing also fall in this category.
+
+
+\subsection{Intelligence (Int)}
+Intelligence represents mental capacity, logical reasoning, and general academic prowess.
+A highly intelligent character will have no trouble navigating academic resources and doing research; for this reason, most mental skills rely on Intelligence to some degree.
+
+Good for characters who want to think their way out of and around problems.
+Scholars, mages, and tacticians all benefit from a high Intelligence.
+
+\subsection{Strength (Str)}
+Strength represents the raw physical strength of your character.
+Bulky and buff characters will naturally be strong, and are good for hitting hard and pulling the weight; this trait is key in some physical skills.
+
+Bouncers, brutes, weight lifters, naturally benefit from a high Strength.
+
+\subsection{Wisdom (Wis)}
+Wisdom is your character's situational awareness, intuition, and general gut-feel.
+For this reason, Wisdom applies to a wide variety of situations, as situational awareness and a good intuition will often be enough to get you through a lot of situations.
+
 \section{Derived Traits}
-The derived traits are all based on the core traits, and therefore cannot be chosen. You can find the derived traits on Figure~\ref{fig:derived_traits}.
+The derived traits are all based on the core traits, and therefore cannot be chosen. 
+You can find the derived traits on Figure~\ref{fig:derived_traits}.
 
 \begin{figure}[!ht]
     \centering
 \begin{tabular}{r | l}
     \textbf{Trait} & \textbf{Calculation} \\\hline
-    Fatigue ($FP$) & $Str+Con$ \\
     Health  ($HP$) & $Con\times 2$ \\
+    Fatigue ($FP$) & $Str + Con$ \\
     Mana    ($MP$) & $Int\times Wis$ \\
-    Parry          & $Fighting/2$, rounded down\\
-    Speed \& Dodge & $Athletics / 2$, rounded down\\
+    Speed          & $Athletics / 2$\\
+    Parry          & $Fighting/2 + \mathit{DfM}$\\
+    Dodge          & $Speed + \mathit{DfM}$
 \end{tabular}
-    \caption{Derived Traits}
+    \caption{Derived Traits. (See Section~\ref{sec:defence} for $\mathit{DfM}$)}
     \label{fig:derived_traits}
 \end{figure}
+
+\subsection{Health (HP)}
+Health represents a character's physical well-being.
+If you have any past experience playing video-games or other RPGs, you know exactly what the purpose of Health is, but for those uninitiated, it is simply a measure of how close to dying your character is.
+Worry not though, getting to zero HP does not instantly mean death!
+More on that in Section~\ref{sec:health-points}.
+
+\subsection{Fatigue (FP)}
+Fatigue represents how hard your character can exert themselves.
+Every point of fatigue has adverse effects on your character's ability to perform.
+Get too fatigued, and your character faints from exhaustion.
+You can read more about Fatigue as a mechanic in Section~\ref{sec:fatigue-points}.
+
+\subsection{Mana (MP)}
+Mana represents your character's magical potential and is used to cast spells (if the setting allows it).
+Running out of mana runs the risk of exhausting your character, so use it effectively!
+More about mana and how to use it in Section~\ref{sec:mana}.
+
+\note If a certain setting calls for it, the MP can be used as ``Mental Points'' or ``Sanity Points'' instead of magical potential.
+This is useful if you want to drain your players sanity over the course of campaigns that feature particularly horrifying things.
+Though if you plan on using mana for that, consider calculating it as $Con \times Wis$ rather than $Int \times Wis$.
+
+\subsection{Parry}
+The Parry trait lets your character deflect an incoming attack using their fighting ability and/or a weapon.
+This derived trait is a bit different from the others, in that it's based on two different skills \textit{Fighting (Light)} and \textit{Fighting (Heavy)}.
+For this reason, the box on the character sheet is split in two.
+More on parrying in Section~\ref{sec:defence}.
+
+\note For all intents and purposes, parrying and blocking are treated interchangeably.
+
+\subsection{Speed}
+If playing with a battle-mat, the \textit{Speed} trait determines how many squares a character can move per turn.
+More on that in Section~\ref{sec:movement}.
+
+\subsection{Dodge}
+The Dodge trait determines your character's ability to dodge out of the way of danger. 
+By default it is equal to your character's Speed trait + the appropriate \textit{DfM}.
+More about Dodge in Section~\ref{sec:defence}.
 
 \section{Trait Saves}
 Sometimes when a situation calls for it, you need to roll what's called a \textit{Trait Save}.
@@ -44,7 +129,7 @@ Trait saves are where you roll against your trait rather than your skill to affe
 A trait save is always $2 \times \mathit{affected\ trait}$, regardless of the trait.
 Trait saves are different from \textit{Skill Rolls} (see Chapter~\ref{chap:skills}) in that they only make use of a single trait, and are not subject to modifiers.
 
-\paragraph{Example} Mark is on the brink of collapse.
+\example Mark is on the brink of collapse.
 He's lost a lot of blood in the battle against the mob boss.
 His \textit{Constitution} is at 6, and needs to roll a \textit{Constitution Save} ($Con \times 2 = 12$) to not faint from blood loss.
 He rolls a 2, a 6, and a 5, a total of 13. He collapses and faints.

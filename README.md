@@ -1,5 +1,5 @@
 ![Logo](https://github.com/ElectricCoffee/SirenRPG/blob/master/src/graphics/svg-logo.png)
-# Beta 1.5.1
+# Beta 2.0.0
 
 Note that this engine is still in development! Much of the engine is not finalised yet, and more is still left to be written and added. Please keep this in mind if you want to download and read the rules.
 
@@ -49,3 +49,8 @@ I don't want to end up with a rulebook 500 pages long by the end of it all, sinc
 ### :thought_balloon: If you wish to collaborate
 Please feel free to submit an _issue_ if you feel something is poorly explained, or add a _pull request_ if you want to add something to the system.
 I am open for new ideas!
+
+## 💵 Donations
+If you wish to make donations for the project, I have setup a few options to help you do so:
+* [Patreon](https://www.patreon.com/sirenRPG) if you wish to give monthly donations.
+* [Ko-fi](https://ko-fi.com/sirenrpg) if you wish to give a single donation.

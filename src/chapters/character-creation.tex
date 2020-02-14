@@ -1,7 +1,11 @@
-\chapter{Character Creation}
+\chapter{Character Creation}\label{chap:char-creat}
+\section{Introduction}
 Character creation is perhaps one of the most important aspects of an RPG.
 How you design your character impacts how the game is going to be played.
-This chapter is meant as a guide to help you through creating your character in Siren.
+This chapter is meant as a guide to help you through creating your character in Siren. 
+Appendix~\ref{app:character-sheets} has a blank character sheet for you to copy.
+
+\note All fractions are rounded down by default unless explicitly stated otherwise.
 
 \section{Use Your Imagination}
 Make your character yours.
@@ -9,26 +13,26 @@ Think of a back-story for them, give them a reason to exist in the world you're 
 If you are unsure about what works in the setting, ask your GM for help; after all, they're the one curating the game.
 Work with the GM and the other players to create a character that best works for your game.
 
-\paragraph{Note} The rest of the guide below is meant as a loose guide.
+\note The following is meant as a loose guide.
 If the GM decides, any and all of the rules below can be changed to suit your particular game.
 
 \section{The Character Sheet}
-The character sheet comes in two pages.
-Page 1 is the general stats page, which contains your traits, skills, and exploits.
-Page 2 is the weapons and equipment page, which keeps track of your weapons, money, and loot.
+The character sheet comes in three pages.
+\paragraph{Page 1} The general stats page, which contains your traits, skills, and exploits.
+\paragraph{Page 2} The weapons, spells, and armour page, which keeps track of your weapons, spells, armour, and shields.
+\paragraph{Page 3} The character and possessions page, which keep track of your character notes (back-story, etc.), money, and loot.
 Example character sheets have been included in Appendix~\ref{app:character-sheets}.
 
-\paragraph{Note} If you can't fit all your character's info, you can write them on the back of the character sheet!
+\note In case you can't fit on everything on the character sheet, feel free to use the reverse side of the paper!
 
 \section{Building a Character}
-\subsection{Experience Points}
-To help you out, you'll get 100 XP to start out (The GM may decide to give more or less XP depending on setting).
-These can be used to purchase skill bonuses and upgrade your traits if you so desire at the beginning of the game.
+\subsection{Experience Points (XP)}
+To help you out, you'll get \textbf{35 XP} to start out (The GM may decide to give more or less XP depending on setting).
+These can be used to purchase skill specialisations and upgrade your traits if you so desire at the beginning of the game.
 Check Chapter~\ref{chap:char-prog} for more information about how XP works.
 
 \subsection{Traits}
-Each trait costs its own level in Experience Points, so bringing a trait up to level 3 requires paying 6 XP ($1 + 2 + 3$).
-Note that you cannot exceed a trait level of 10.
+During character creation, each trait level costs 1 XP and cannot exceed a trait level of 10.
 
 The derived traits are calculated like this:
 
@@ -36,55 +40,111 @@ The derived traits are calculated like this:
 \textbf{HP:} & $Con \times 2$ \\
 \textbf{FP:} & $Con + Str$ \\
 \textbf{MP:} & $Int \times Wis$ \\
-\textbf{Def:} & Your character's Passive Defence score, see Chapter~\ref{chap:defence} for more info \\
-\textbf{Parry:} & $Fighting / 2$, rounded down \\
-\textbf{Speed:} & $Athletics / 2$, rounded down \\
-\end{tabular}
+\textbf{Speed:} & $Athletics / 2$\\
+\textbf{Parry:} & $Fighting / 2 + \mathit{DfM}$\\
+\textbf{Dodge:} & $Speed + \mathit{DfM}$ \\
+\end{tabular}\\
+See Section~\ref{sec:defence} for an explanation on \textit{Parry}, \textit{Dodge}, and \textit{DfM}.
 
-\paragraph{Example} A character with the traits set up like this:
+\note The \textit{Parry} box on the character sheet is split in two, this is due to the fact that there are \textit{two} parry traits: one for \textit{Fighting (Heavy)} and one for \textit{Fighting (Light)}.
+It is up to you which half to use for which, as long as you can remember it.
 
-\begin{tabular}{r | l}
-    \textbf{Agi} & 6\\
-    \textbf{Cha} & 4\\
-    \textbf{Con} & 5\\
-    \textbf{Dex} & 6\\
-    \textbf{Int} & 5\\
-    \textbf{Str} & 4\\
-    \textbf{Wis} & 3\\
-\end{tabular}
+\example A character with the traits set up like this:
 
-Would cost 98 XP to build.
-Note that a value of 5 is considered "average".
+\begin{tabular}{ccccccc}
+    \textbf{Agi} & \textbf{Cha} & \textbf{Con} & \textbf{Dex} & \textbf{Int} & \textbf{Str} & \textbf{Wis} \\\hline
+    6 & 4 & 4 & 6 & 5 & 4 & 3\\ 
+\end{tabular}\\
+Would cost 32 XP to build.
+Note that a value of 5 is considered \textit{average}.
 
-\paragraph{Note} Parry and Athletics are skills, covered in Chapter~\ref{chap:skills}.
-For Parry, the parrying ability depends on the fighting skill you're currently using.
+See Appendix~\ref{app:character-sheets} for an example character with these exact traits.
+
+\note \textit{Parry} and \textit{Athletics} are covered in Chapter~\ref{chap:combat} and Chapter~\ref{chap:skills} respectively.
 
 \subsection{Skills}
 Calculate your character's skills based on their traits as shown in the skill listing on your character sheet.
 Think about what your character is particularly good at, these skills can be what your character specialises in.
-These specialisations---or proficiencies---follow the \textit{Experience Points} section above.
+See Chapter~\ref{chap:skills} for more information about Skills in general.
 
 \subsection{Exploits}
-You may come up with up to one exploit during character creation (you have the option to add more as your character progresses).
-Exploits are entirely player-defined, and are a way of personalising your character to fit your playstyle.
+Exploits are entirely player-defined, and are a way of personalising your character to fit your play-style.
+Exploits can range from simply providing bonuses, to providing exceptions to the existing rules.
 You can read more about exploits in Chapter~\ref{chap:exploits}.
 
-\subsection{Weapon Skills}
-The weapon skills are separate from the general skills in that your character can specialise in any weapon under the sun if they so desire.
-For this reason, you need to fill out the weapon stats for the given weapon yourself.
-To help you out, we've included a weapon list in Appendix~\ref{sec:weapons}, which provides a list of weapons and their relative stats.
+\subsection{Weapons}
+The weapons section of the character sheet lists all the relevant attributes of a given weapon.
+The section is divided into five columns: \textit{name}, \textit{specialisation}, \textit{damage \& type}, \textit{range}, and \textit{parry}.
 
-\paragraph{Note} You cannot use a weapon skill unless you're also carrying a weapon.
+\paragraph{Name} The given name of the weapon, this could be something as simple as ``Long Sword'' ``Glock~22'' to something as personal as ``Widow-Maker'' or ``Demon Slayer''.
 
-\subsection{Magic Skills}
-Like weapon skills, magic skills are separated for the same reason.
+\paragraph{Specialisation} The name of the given specialisation the weapon falls under.
+The idea is that, if you're able to use one long sword, you're able to use all of them, doesn't matter if one has a fancier handle than the other. 
+The specialisation is also what you upgrade if you want to be better at using the weapon.
+You can think of this as the \textit{weapon class}.
+
+\paragraph{Damage \& Type} The dice you roll and the type of damage it deals.
+Examples include $2d6\ \mathit{Piercing}$ and $1d6+3\ \mathit{Crushing}$.
+
+\paragraph{Range} The range of the weapon in meters.
+The range of a weapon is most useful when playing with a game mat (see Chapter~\ref{chap:combat}), where the width of each square corresponds to $1m$.
+
+\paragraph{Parry} The individual weapon's parry score, which differs from the score in the box on the front of the character sheet.
+It is included here for quick reference.
+
+This is the \textit{Parry} score from the first page, plus the weapon's specialisation.
+
+\subsection{Shields \& Armour}
+The shields and armour sections list the relevant attributes of your characters' defensive equipment.
+Where they differ, is in the fact that shields can be used offensively as well as defensively.
+Shields share all columns as weapons except range, as all shields are considered close-range weapons.
+Therefore, refer to the relevant columns in the weapons section above.
+
+The defensive stats for shields and armour are divided into \textit{DfM} and \textit{Damage Resistance}.
+Refer to Section~\ref{sec:defence} for more info.
+
+\paragraph{DfM} Short for \textbf{D}e\textbf{f}ence \textbf{M}odifier.
+It is a type of passive bonus applied to your \textit{Dodge} and \textit{Parry}, which makes it more likely for you to not get hurt during combat.
+
+\paragraph{Damage Resistance} Provides damage reduction in the case you \textit{do} get hit.
+Damage Resistance makes attacks hurt less, thus increasing your survivability during combat.
+
+\subsection{Spells}
+The spell section lists the spells your character knows and is able to use.
+The section is divided into \textit{name}, \textit{cost}, and \textit{description}.
 Check Chapter~\ref{chap:magic} for more information about magic in general.
+
+\paragraph{Name} The name of the spell.
+Unlike weapons, spells don't fall into general categories in quite the same way, so specialisations need to be handled on a per-spell basis.
+It's important to note, that just because your character doesn't specialise in a given spell, it doesn't also mean they can't use it.
+It is ultimately up to the GM to decide whether a spell can be learned or not.
+
+\paragraph{Cost} The cost of the spell in $MP$.
+Some spells consume mana-points, which limit the number of times a spell can be used.
+See Section~\ref{sec:mana} for more details.
+
+\paragraph{Range} The range of the spell.
+Depending on the setting, the range of any given spell can vary widely from point-blank to several kilometres.
+
+\paragraph{Description} Describes the effects of the spell in question.
+Things like how it behaves and---if applicable---how much damage it deals.
 
 \subsection{Equipment}
 The equipment section lists all the stuff you're carrying.
 This is everything from armour and clothes, to loot, to weapons.
 
 \subsection{Money}
-Each box in the money section is for the currency carrying, and the lines next to the boxes are meant for the amount of said currency.
+Each box in the money section is for the type of the currency carried, and the lines next to the boxes are meant for the amount of said currency.
 So if you're playing an international spy, the boxes could hold \textit{USD}, \textit{GBP}, \textit{EUR}.
 And if you're playing in a fantasy setting, they could hold \textit{Gold}, \textit{Silver}, \textit{Bronze}.
+
+\example Here's an example of how the money table on the character sheet could be filled in a medieval fantasy setting:
+\begin{center}
+    \begin{tabular}{|r|l@{\hspace{1cm}}}\cline{1-1}
+        Platinum & 0\\\hline
+        Gold & 12\\\hline
+        Silver & 144\\\hline
+        Copper & 59\\\hline
+               & \\\hline
+    \end{tabular}
+\end{center}

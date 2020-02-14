@@ -2,8 +2,10 @@
 The player rolls three six-sided dice (3d6) against their skill of choice, if the outcome is $\leq$ the skill level, it's a success, if not, it's a fail.
 Rolling a 3, is an automatic success (regardless of level), and rolling an 18 is an automatic fail (also regardless of level).
 
-\paragraph{Example} Say Alice wants to persuade a guard to do something stupid. Her \textit{Persuasion} skill is at 13. 
-She rolls 3d6, and rolls a 1, a 5, and a 3, which is 9 in total. This means she successfully persuades the guard.
+\example Alice wants to pick a lock. 
+Her \textit{Thievery} skill is at 13. 
+She rolls 3d6, and rolls a 1, a 5, and a 3, which is 9 in total. 
+This means she successfully picks the lock.
 
 \begin{figure}
 \centering
@@ -22,7 +24,7 @@ She rolls 3d6, and rolls a 1, a 5, and a 3, which is 9 in total. This means she 
               & Stealth          & $Agi+Wis$ & Sneaking around and acting unseen.            \\\hline
     Social    & Contacts         & $Cha+Int$ & Make and use connections with people.         \\
               & Insight          & $Cha+Wis$ & Sensing and social cues and motivation        \\
-              & Nursing          & $Cha+Con$ & Taking care of people                         \\
+              & Nursing          & $Cha+Con$ & Taking care of people and non-magic healing.  \\
               & Persuasion       & $Cha+Cha$ & Manipulating people.                          \\\hline
     Technical & Crafting         & $Dex+Int$ & Making things with your hands.                \\
               & Shooting         & $Agi+Dex$ & Shooting or throwing objects.                 \\
@@ -33,4 +35,15 @@ She rolls 3d6, and rolls a 1, a 5, and a 3, which is 9 in total. This means she 
 \caption{Skill Listing}
 \label{fig:skills}
 \end{figure}
+
+\subsection{Skill Modifiers \& Challenge Ratings}
+A skill modifier is something which modifies a skill.
+These modifiers always come in the form $Skill \pm n$, where $n$ is by how much a given skill is modified.
+
+Skill modifiers can be applied in a variety of situations and almost always stack.
+Modifiers can come from your character's specialisations (see Section~\ref{sec:specialisation}), their exploits (see Chapter~\ref{chap:exploits}), the difficulty of a given challenge, fatigue (see Section~\ref{sec:fatigue-points}), or various status effects.
+
+Pushing a boulder could be $\mathit{Physique} - 4$, which means it \textit{subtracts} 4 from your character's Physique skill ($\pm$ any other modifiers) \textbf{before} the roll is performed, thus making it more difficult to succeed.
+
+\paragraph{Note to players coming from other systems} The skill system may be reversed from what you're used to, and may require some re-adjustment time because in Siren you want to be aiming for a lower roll.
 \newpage

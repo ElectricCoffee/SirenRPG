@@ -1,0 +1,56 @@
+\chapter{Combat}\label{chap:combat}
+\section{Introduction}
+Combat is a staple of most RPGs. 
+It's intense, often exhilarating, and it gives the players a chance to strategise.
+Combat is essentially a series of \textit{Contests of Skill} (see Section~\ref{sec:contest}), but due to the nature of combat are naturally a bit more involved.
+
+\note If you are not playing with a battle-mat or game table, you can gloss over the rules for movement.
+
+\subsection{Turns}
+Combat is split into a number of turns, each turn represents about 6 seconds of in-game time, meaning 10 turns make up an in-game minute.
+
+Each character's individual turn is split into two types of phases: \textit{proactive} and \textit{reactive}.
+See Section~\ref{sec:phases} for details.
+
+\note One turn is the time it takes for every character to have had a go, not the time for each individual character.
+
+\subsection{Turn Order}
+To determine turn order, each player rolls $1d6 + \mathit{Athletics}$. 
+The turn-order is then ordered highest to lowest. 
+Highest result goes first, lowest goes last. 
+Any ties require a re-roll.
+
+\example Alice, Bob, and Clarice all roll for turn order. 
+They have an athletics score of 9, 9, and 10 respectively. 
+Alice rolls a 5, Bob rolls 3, and Clarice rolls a 6. 
+Clarice goes first with 16, Alice is next with 14, and Bob is last with a score of 12.
+
+\subsection{Movement}\label{sec:movement}
+Movement is 8-directional (see Figure~\ref{fig:directions}), and moving in any direction costs 1 movement point.
+
+\begin{figure}
+    \centering
+    \includegraphics{graphics/directions-trans.png}
+    \caption{The eight movement directions}
+    \label{fig:directions}
+\end{figure}
+
+Your character can only move as far as their movement points allow, but you may choose to move a shorter distance if you so desire.
+Figure~\ref{fig:movement} shows an example of a character moving 4 squares, which is worth 4 movement points.
+
+\begin{figure}
+    \centering
+    \includegraphics{graphics/movement-trans.png}
+    \caption{Example of movement.}
+    \label{fig:movement}
+\end{figure}
+
+\subsection{The Grid}
+The battle mat is subdivided into a grid of squares. 
+The in-game size of a square is $1m^2$, although the GM may scale it up or down as necessary.
+The GM must alert the players of the scale if it differs from the standard $1m^2$.
+
+\input{chapters/combat/phases.tex}
+\input{chapters/combat/taking-damage.tex}
+\input{chapters/combat/healing-damage.tex}
+\input{chapters/combat/defence.tex}

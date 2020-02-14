@@ -3,6 +3,8 @@
 Character progression is important in any RPG.
 As your character progresses throughout the adventure, they're naturally going to acquire new abilities, and hone existing their skills.
 
+\note The use of XP during character progression is slightly different than that of character creation (Chapter~\ref{chap:char-creat}), so pay close attention to the following sections.
+
 \section{Experience Points}
 To let your characters progress, the game uses \textit{Experience Points} (XP).
 XP are used for three things:
@@ -11,64 +13,104 @@ XP are used for three things:
 \item Buy trait upgrades.
 \item Buy new exploits.
 \end{enumerate}
-The XP cost for each varies depending on what's being bought.
+The XP cost for each varies depending on what's being bought.\\
+\textbf{XP is always spent during a long rest (a rest of 8+ in-game hours).}
 
-\section{Buying Proficiency Bonuses and Trait Upgrades}
-The price of buying a proficiency bonus or trait upgrade is the same:
-Each level costs itself in points.
-Put differently: going from level 1 to 2 costs 2 points, and going from 7 to 8 costs 8 points.
-Naturally, this means that if you want to buy three levels all at once, you have to pay the price of each successive level.
+\section{Buying Trait Upgrades}
+The price of buying a trait upgrade is always the same:
+Each level costs just one (1) point of XP, \textbf{unless} the player wishes to upgrade the skill or trait more than once during a single long rest, in which case the price for a level increases by 1 XP for each additional level.
 
-\paragraph{Example} Joyce wants to increase her warrior's \textit{Wisdom}, it's currently at level 2, and she wants to bring it up to level 5.
-To make this happen, she needs to pay 12 XP, because she also needs to buy levels 3 and 4, making it $3 + 4 + 5 = 12$ XP.
+\example This levelling session, Joyce wants to increase her character's \textit{Wisdom}. 
+It's currently at level 2, and she wants to bring it up to level 3.
+For this to happen, she pays 1 XP for \textit{Wisdom}.
+She also wants to bring her level of \textit{Strength} from 3 to 5, that will cost her 1 XP from 3 to 4, and 2 XP from 4 to 5, or 3 XP total for \textit{Strength}.
+
+\section{Buying or Upgrading Specialisations}
+New specialisations or upgrades to such, costs 1 XP each regardless of how many points you wish to add during a levelling session.
 
 \section{Buying Exploits}
-As exploits can have a profound impact on the way a character is played, these are naturally much more expensive.
-Each exploits costs four times the number of exploits already present, or visualised graphically; the first exploit is free, the next costs 4 XP, the next 8, and so on:
+As exploits can have a profound impact on the way a character is played, these therefore have a chance of being more expensive than traits or specialisations.
+It is generally up to the GM how much an exploit will cost, typically between 1 and 4 XP, though they can cost more.
 
-\begin{center}
-  \begin{tabular}{r|c|l}
-    \textbf{Exploit} & \textbf{XP Cost} & \textbf{Calculation}\\\hline
-    1st & Free! & $0 \times 4 = 0$ \\
-    2nd & 4     & $1 \times 4 = 4$ \\
-    3rd & 8     & $2 \times 4 = 8$ \\
-    4th & 12    & $3 \times 4 = 12$\\
-    5th & 16    & $4 \times 4 = 16$\\
-    6th & 20    & $5 \times 4 = 20$\\
-  \end{tabular}
-\end{center}
+Exploit costs can often be split into four tiers:
 
-\paragraph{Example} Joyce also wants to buy two new exploits for her warrior.
-The warrior already has one exploit, and she needs to pay 12 XP to add those extra exploits, since exploit no.\ 2 costs 4, and no.\ 3 costs 8, the total comes up to $4 + 8 = 12$ XP.
+\begin{tabular}{r | l}
+  1 XP & Exploits that have lots of restrictions or minor mechanical bonuses\\
+  2 XP & Exploits that are more of a bonus with fewer restrictions\\
+  3 XP & Exploits that change the nature of the character, with restrictions applied\\
+  4 XP & Exploits that have few or no restrictions and/or have large mechanical effects.
+\end{tabular}
+
+\subsection{Tier 1 Examples:}
+\paragraph{Bloodtinged (1 XP)}
+When in melee combat, you deal $+2$ bonus damage when fighting non-human opponents.
+
+\paragraph{I Need Some Duct-Tape! (1 XP)}
+\textbf{Requirements:} At least two \textit{Crafting} specialisations and access to duct-tape.
+
+When deprived of the correct tools, materials, and/or workspace you are still able to make crafting checks so long as you are able to give an explanation to the GM of how your character did so.
+You do so with a $-3$ modifier to your \textit{Crafting} check.
+
+\subsection{Tier 2 Examples:}
+\paragraph{Bloodlust (2 XP)}
+When in melee combat, a roll of 4 or lower counts as an automatic success against non-human opponents.
+
+\paragraph{Give Me a Couple of Bobby-Pins (2 XP)}
+\textbf{Requirements:} At least two \textit{Crafting} specialisations.
+
+When deprived of the correct tools, materials, and/or workspace you are still able to make crafting checks so long as you are able to give an explanation to the GM of how your character did so.
+
+\subsection{Tier 3 Examples:}
+\paragraph{Blooddrunk (3 XP)}
+When in melee combat, a roll of 4 or lower counts as an automatic success.
+
+\paragraph{Mac's Back (3 XP)}
+\textbf{Requirements:} At least one \textit{Crafting} specialisation.
+
+When deprived of the correct tools, materials, and/or workspace you are still able to make crafting checks so long as you are able to give an explanation to the GM of how your character did so.
+Additionally, the maximum penalty on any \textit{Crafting} check is now $-2$.
+
+\subsection{Tier 4 Examples:}
+
+\paragraph{Blood Frenzy (4 XP)}
+When in melee combat, a roll of 5 or lower counts as an automatic success.
+Additionally, you deal $+2$ bonus damage against non-human opponents.
+
+\paragraph{Swiss Army Man (4 XP)}
+\textbf{Requirements:} none.
+
+When deprived of the correct tools, materials, and/or workspace you are still able to make crafting checks so long as you are able to give an explanation to the GM of how your character did so.
+Additionally, the maximum penalty on any \textit{Crafting} check is now $-2$.
+\\\\See Appendix~\ref{app:exploits} for more pricing examples.
 
 \section{Acquiring XP}
 Having an XP system wouldn't make much sense if it wasn't also possible to gain more of it.
 \textit{Milestones} are used to accomplish this task.
-A milestone is a significant moment in the game that creates a natural \textit{break} in the gameplay.
-Examples of natural milestones could be completing a mission or a story arc, at the defeat of some villain that your party has been up against, or even simply at the end of a session.
+A milestone is a significant moment in the game that creates a natural \textit{break} in the game-play.
+Examples of natural milestones could be completing a mission or a story arc, defeating some villain, or even simply at the end of a session.
 It is entirely up to the GM to distribute XP, and to help with this, milestones are split into three different kinds: minor, significant, and major.
 
-\paragraph{Note} XP is earned individually, not for the entire party.
+\note XP is earned individually, not for the entire party.
 It makes little sense that the entire party gets the same amount of XP, if Broot the Destroyer goes hunting orcs all by himself.
 
 \subsection{Minor Milestone}
 Minor milestones typically occur at the end of a session, or at the end of a minor in-game event.
 Minor milestones should give you a chance to re-balance your character and re-word one of your exploits.
 
-Your character gains 1 XP.
+Your character gains 1--2 XP.
 
 \subsection{Significant Milestones}
 Significant milestones occur at important in-game events.
 It could be that the party finally found the evil wizard's secret lair, or that some moderate challenge has been overcome.
 If in doubt, this can also just happen every 2--3 sessions.
 
-Your character gains 2 XP.
+Your character gains 1--3 XP.
 
 \subsection{Major Milestones}
 Major milestones occur at events that shake things up a lot.
 Things like, killing the main villain, or driving a group of bandits out of town, or perhaps wreaking a significant amount of havoc.
 Alternatively, it could also be at the end of a story arc.
 
-Your character gains 4 XP.
+Your character gains $4+$ XP.
 
-\paragraph{Note} It's of course up to the GM how much XP is awarded, this is meant as more of a guide than a hard rule.
+\note It's of course up to the GM how much XP is awarded, this is meant as more of a guide than a hard rule.
