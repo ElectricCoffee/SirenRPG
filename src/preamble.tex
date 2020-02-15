@@ -1,8 +1,29 @@
 \usepackage[utf8]{inputenc}
 \usepackage[margin=3cm]{geometry}
-\usepackage{appendix, tikz, pgfplots, graphicx, pdfpages, multicol}
+\usepackage{appendix} % For appendix support
+\usepackage{tikz, pgfplots} % For the skill outcome graph
+    \pgfplotsset{width = \textwidth, compat = newest}
+\usepackage{graphicx} % For advanced picture insertion
+\usepackage{pdfpages} % For inserting PDFs
+\usepackage{multicol} % For supporting multi-columnar tables
+\usepackage{tcolorbox} % For coloured info boxes
+\usepackage{textcomp}
+    \tcbuselibrary{skins}
 
-\pgfplotsset{width = \textwidth, compat = newest}
+\newtcolorbox{note}{
+    enhanced, % enable advanced settings
+    left = 10mm, % pushes text away from the left edge by 10mm
+    sharp corners, % disables rounded corners
+    rounded corners = southeast, % "round" the bottom right corner
+    arc is angular, % make the "round" corner an angle
+    arc = 3mm, % controls corner cut
+    boxrule=0.6pt, % sets box line thickness
+    underlay={%
+        \path[fill=tcbcolback!80!black] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2); % triangle
+        \path[draw=tcbcolframe,shorten <=-0.05mm,shorten >=-0.05mm] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2); % triangle edge
+        \path[fill=gray!50!black,draw=none] (interior.south west) rectangle node[white]{\Huge\bfseries \textinterrobang} ([xshift=8mm]interior.north west);
+    },
+    drop fuzzy shadow % adds drop shadow
+}
 
-\newcommand{\note}{\paragraph{Note}}
-\newcommand{\example}{\paragraph{Example}}
+\newtcolorbox{example}{title = \textsc{Example}}
