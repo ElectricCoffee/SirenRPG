@@ -1,5 +1,5 @@
 \usepackage[utf8]{inputenc}
-\usepackage[margin=3cm]{geometry}
+\usepackage[margin=3cm]{geometry} % For smaller margins
 \usepackage{appendix} % For appendix support
 \usepackage{tikz, pgfplots} % For the skill outcome graph
     \pgfplotsset{width = \textwidth, compat = newest}
@@ -7,10 +7,13 @@
 \usepackage{pdfpages} % For inserting PDFs
 \usepackage{multicol} % For supporting multi-columnar tables
 \usepackage{tcolorbox} % For coloured info boxes
-\usepackage{textcomp}
     \tcbuselibrary{skins}
-\usepackage[sc, explicit]{titlesec}
+\usepackage{textcomp} % For the interrobang
+\usepackage[sc]{titlesec} % for custom titles
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CUSTOM TEXT BOXES %%
+%%%%%%%%%%%%%%%%%%%%%%%
 \newtcolorbox{note}{
     enhanced, % enable advanced settings
     left = 10mm, % pushes text away from the left edge by 10mm
@@ -27,4 +30,8 @@
     drop fuzzy shadow % adds drop shadow
 }
 
-\newtcolorbox{example}{title = \textsc{Example}}
+\newtcolorbox{example}{
+    enhanced,
+    title = \textsc{Example},
+    before upper={\parindent15pt\noindent} % add paragraph indentation
+}
