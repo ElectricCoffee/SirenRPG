@@ -8,6 +8,7 @@
 \usepackage{multicol} % For supporting multi-columnar tables
 \usepackage{tcolorbox} % For coloured info boxes
     \tcbuselibrary{skins}
+    \tcbset{colback=brown!10, fonttitle=\scshape}
 \usepackage{textcomp} % For the interrobang
 \usepackage[sc]{titlesec} % for custom titles
 
@@ -25,13 +26,13 @@
     underlay={%
         \path[fill=tcbcolback!80!black] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2); % triangle
         \path[draw=tcbcolframe,shorten <=-0.05mm,shorten >=-0.05mm] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2); % triangle edge
-        \path[fill=gray!50!black,draw=none] (interior.south west) rectangle node[white]{\Huge\bfseries \textinterrobang} ([xshift=8mm]interior.north west);
+        \path[fill=gray!50!black,draw=none] (interior.south west) rectangle node[brown!10]{\Huge\bfseries \textinterrobang} ([xshift=8mm]interior.north west);
     },
     drop fuzzy shadow % adds drop shadow
 }
 
 \newtcolorbox{example}{
     enhanced,
-    title = \textsc{Example},
+    title = Example,
     before upper={\parindent15pt\noindent} % add paragraph indentation
 }
