@@ -10,7 +10,37 @@
     \tcbuselibrary{skins}
     \tcbset{colback=brown!10, fonttitle=\scshape}
 \usepackage{textcomp} % For the interrobang
-\usepackage[sc]{titlesec} % for custom titles
+\usepackage[sc,sf,bf]{titlesec} % for custom titles
+\usepackage{sectsty} % for section styles
+\usepackage{fancyhdr} % for "fancy" headers
+\usepackage[notmath]{sansmathfonts} % for a sans-serif small-caps font
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CHAPTERS & SECTION HEADINGS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Simplifies chapter titles
+% No longer says
+% Chapter 2
+% Game Creation
+% but instead simply
+% 2 Game Creation
+\titleformat{\chapter}[hang]
+{\sffamily\bfseries\scshape\Huge}
+{\thechapter\quad}{0pt}{}{}
+
+% Removes unnecessarily large margin above chapter title
+\titlespacing*{\chapter}{0pt}{-\topskip}{40pt}
+
+% Set the remaining titles to be sans serif and small caps
+\allsectionsfont{\sffamily\scshape}
+
+%%%%%%%%%%%%%%%%%
+%% THUMB INDEX %%
+%%%%%%%%%%%%%%%%%
+
+\renewcommand{\chaptermark}[1]{\markboth{\textsc{\thechapter\ #1}}{}}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% CUSTOM TEXT BOXES %%
