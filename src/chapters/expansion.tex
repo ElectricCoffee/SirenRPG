@@ -11,7 +11,7 @@ If you think \textit{Faith} really needs to be a \textit{Trait}, then you can ad
 Only your imagination sets the limit!
 
 \begin{note}
-    This chapter will not go into how to add Exploits or Spells.
+    This chapter will not go into how to add \textit{Exploits} or \textit{Spells}.
     Please refer to the relevant chapters for information on that.
 \end{note}
 
@@ -34,6 +34,17 @@ Take a look at the default skill-listing and what categories each skill falls un
 
 Would it make sense to make a \textit{Wis}-based category? Animal Handling and other nature related skills comes to mind as an example.
 
+\paragraph{Example Skills}
+\begin{center}
+\begin{tabular}{r|l}
+    \textbf{Skill Name}      & \textbf{Traits}\\\hline
+    \textit{Pyromancy}       & $Int + Wis$\\
+    \textit{Archery}         & $Agi + Dex$\\
+    \textit{Animal Handling} & $Con + Wis$\\
+    \textit{Riding}          & $Dex + Wis$\\
+\end{tabular}
+\end{center}
+
 \section{Adding or Changing Traits}
 Your setting may not be satisfied with just the seven basic traits included in the core rules.
 It could be that you feel it would be better with an eighth trait like \textit{Faith} or \textit{Psionics} or something else entirely.
@@ -50,9 +61,32 @@ Part of the appeal of a simpler system is to not be overburdened with complicate
 
 If you wish to write a module adding more such things to the base game, please feel free to do so! Just keep in mind that the main ethos of \textit{Siren} is that of ease of use.
 
+\subsection{Example Additions}
+
+\paragraph{Encumbrance} Your character can comfortably carry weight up to $Con + Str$ kilograms. 
+Every kilogram beyond that will add $1FP$ for every 20 minutes of carrying.
+
+\paragraph{Mental Health} Mental health is $Con + Wis$ and represents how much mental stress your character can suffer before negative effects start to show.
+Mental Health functions the same way as physical health ($HP$), except it can only be damaged by mental attacks.
+Mental attacks can be anything from psionic attacks, to mental abuse, to being in a stressful environment your character doesn't feel comfortable in.
+In a mundane setting Mental Health can replace $MP$ as outlined in Section~\ref{sec:traits-mp}.
+
+\paragraph{Holding Your Breath} Your character can comfortably hold their breath for $Agi + Con$ seconds.
+Every second beyond that requires a \textit{Constitution Save} to succeed.
+If the save fails, your character will immediately gasp out for air and suffer whatever consequences doing so may entail.
+
 \section{Changing the Core Mechanics}
 Sometimes the basic rules themselves don't fit what you really wish to achieve.
 If you wish to shake up the number or type of dice used for the system, you can do so; just be prepared that you may need to re-balance or even change the \textit{Skill} system entirely.
 
 Maybe you instead wish to change the system from rolling \textit{under} a given rating to \textit{over}---similar to how it's done in many other RPG systems.
 You can do that of course, but given how fundamental this style of rolling is to how the engine is constructed, it may be a difficult task.
+
+\subsection{Example Changes}
+\paragraph{Hex-Grid} A rather simple change could be to use a hex-grid instead of a square one for combat.
+Movement will be restricted to six directions instead of eight, and some care will have to be put into calculating distances.
+
+\paragraph{Polyhedral Damage Dice} Maybe you want your great-axe to use a $d12$ as a damage die instead of $2d6$, or let the spear use a $d4$ instead of $d6-1$.
+
+\paragraph{Action Points} Instead of having combat run in phases, it could instead use Action Points.
+Each character has $AP$ equal to their speed, and may carry out any number of proactive or reactive actions as long as there's enough $AP$ to do it.
