@@ -13,7 +13,7 @@
 	},
 	ybar interval = 1,
 ]
-\addplot 
+\addplot[fill = brown!10] 
 	coordinates {
 	    (3,    0.46) 
 	    (4,    1.85)
@@ -53,6 +53,7 @@
 \end{axis}
 \end{tikzpicture}\\
 The graph above shows the probability of succeeding a skill roll. If your character has an effective skill of 10, they have a 50\% chance of succeeding that roll. If they have a skill of 12, the chance of success goes up to 74\%.
+
 \section{Critical Miss Table (Melee)}
 \begin{center}
 \begin{tabular}{r | l}
@@ -65,7 +66,9 @@ The graph above shows the probability of succeeding a skill roll. If your charac
     6 & You hit yourself in the arm or leg! (50\% chance of hitting either)\\
 \end{tabular}
 \end{center}
-\note For \#3, the weapon flies 1d6 squares (50\% chance forward or backward). If it hits someone, it does half damage and lands there.
+\begin{note} 
+    For \#3, the weapon flies 1d6 squares (50\% chance forward or backward). If it hits someone, it does half damage and lands there.
+\end{note}
 
 \section{Weapons} \label{sec:weapons}
 \subsection{Melee Weapons}
@@ -97,8 +100,10 @@ The graph above shows the probability of succeeding a skill roll. If your charac
     Future    & Laser Gun   & 6d6   & Piercing & 66m \\
 \end{tabular}
 \end{center}
-\note These ranges are for when you want to shoot without a range penalty.
-So despite the fact that a pistol can shoot around 1800m, it's incredibly hard to do so.
+\begin{note} 
+    These ranges are for when you want to shoot without a range penalty.
+    So despite the fact that a pistol can shoot around 1800m, it's incredibly hard to do so.
+\end{note}
 
 \section{Armour} \label{sec:armour}
 \begin{center}

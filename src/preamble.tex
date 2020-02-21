@@ -1,8 +1,69 @@
 \usepackage[utf8]{inputenc}
-\usepackage[margin=3cm]{geometry}
-\usepackage{appendix, tikz, pgfplots, graphicx, pdfpages, multicol}
+\usepackage[margin=3cm]{geometry} % For smaller margins
+\usepackage{appendix} % For appendix support
+\usepackage{tikz, pgfplots} % For the skill outcome graph
+    \pgfplotsset{width = \textwidth, compat = newest}
+\usepackage{graphicx} % For advanced picture insertion
+\usepackage{pdfpages} % For inserting PDFs
+\usepackage{multicol} % For supporting multi-columnar tables
+\usepackage{tcolorbox} % For coloured info boxes
+    \tcbuselibrary{skins}
+    \tcbset{colback=brown!10, fonttitle=\scshape}
+\usepackage{textcomp} % For the interrobang
+\usepackage[sc,sf,bf]{titlesec} % for custom titles
+\usepackage{sectsty} % for section styles
+\usepackage{fancyhdr} % for "fancy" headers
+\usepackage[notmath]{sansmathfonts} % for a sans-serif small-caps font
+\usepackage{enumitem} % for finer control over enumerations
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CHAPTERS & SECTION HEADINGS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\pgfplotsset{width = \textwidth, compat = newest}
 
-\newcommand{\note}{\paragraph{Note}}
-\newcommand{\example}{\paragraph{Example}}
+% Simplifies chapter titles
+% No longer says
+% Chapter 2
+% Game Creation
+% but instead simply
+% 2 Game Creation
+\titleformat{\chapter}[hang]
+{\sffamily\bfseries\scshape\Huge}
+{\thechapter\quad}{0pt}{}{}
+
+% Removes unnecessarily large margin above chapter title
+\titlespacing*{\chapter}{0pt}{-\topskip}{40pt}
+
+% Set the remaining titles to be sans serif and small caps
+\allsectionsfont{\sffamily\scshape}
+
+%%%%%%%%%%%%%%%%%
+%% THUMB INDEX %%
+%%%%%%%%%%%%%%%%%
+
+\renewcommand{\chaptermark}[1]{\markboth{\textsc{\thechapter\ #1}}{}}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CUSTOM TEXT BOXES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+\newtcolorbox{note}{
+    enhanced, % enable advanced settings
+    left = 10mm, % pushes text away from the left edge by 10mm
+    sharp corners, % disables rounded corners
+    rounded corners = southeast, % "round" the bottom right corner
+    arc is angular, % make the "round" corner an angle
+    arc = 3mm, % controls corner cut
+    boxrule=0.6pt, % sets box line thickness
+    underlay={%
+        \path[fill=tcbcolback!80!black] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2); % triangle
+        \path[draw=tcbcolframe,shorten <=-0.05mm,shorten >=-0.05mm] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2); % triangle edge
+        \path[fill=gray!50!black,draw=none] (interior.south west) rectangle node[brown!10]{\Huge\bfseries \textinterrobang} ([xshift=8mm]interior.north west);
+    },
+    drop fuzzy shadow % adds drop shadow
+}
+
+\newtcolorbox{example}{
+    enhanced,
+    title = Example,
+    before upper={\parindent15pt\noindent} % add paragraph indentation
+}
