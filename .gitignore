@@ -21,3 +21,5 @@
 # Include everything in the graphics folder, regardless of rules stated above.
 !/src/graphics/*
 *.autosave
+
+__latexindent_temp.tex
