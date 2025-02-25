@@ -16,9 +16,9 @@ You can find the core traits in Figure~\ref{fig:core_traits}.
         Charisma     ($Cha$) & Ability to affect people \\
         Constitution ($Con$) & Health, stamina, and mettle \\
         Dexterity    ($Dex$) & Use of your hands and fingers \\
-        Intelligence ($Int$) & Mental capability \\
-        Strength     ($Str$) & Raw strength and muscle power \\
-        Wisdom       ($Wis$) & Situational assessment and intuition
+        Intuition    ($Int$) & Situational assessment and intuition\\
+        Logic        ($Log$) & Mental capability \\
+        Strength     ($Str$) & Raw strength and muscle power
     \end{tabular}
     \caption{Core Traits}
     \label{fig:core_traits}
@@ -47,23 +47,22 @@ If your character is a medic, a ranger, or needs to tank a lot of hits, then Con
 Dexterity---or more accurately: \textit{manual} dexterity---governs your character's fine motor skills and ability to skilfully use their hands and fingers.
 Intricate jobs like lock-picking, surgery, and watch-making all lend themselves nicely to a dexterous character, but coarser jobs that also require the use of your hands, like marksmanship and sailing also fall in this category.
 
+\subsection{Intuition (Int)}
+Intuition is your character's situational awareness, intuition, and general gut-feel.
+For this reason, Intuition applies to a wide variety of situations, as situational awareness and a good intuition will often be enough to get you through a lot of situations.
 
-\subsection{Intelligence (Int)}
-Intelligence represents mental capacity, logical reasoning, and general academic prowess.
-A highly intelligent character will have no trouble navigating academic resources and doing research; for this reason, most mental skills rely on Intelligence to some degree.
+\subsection{Logic (Log)}
+Logic represents mental capacity, logical reasoning, and general academic prowess.
+A highly intelligent character will have no trouble navigating academic resources and doing research; for this reason, most mental skills rely on Logic to some degree.
 
 Good for characters who want to think their way out of and around problems.
-Scholars, mages, and tacticians all benefit from a high Intelligence.
+Scholars, mages, and tacticians all benefit from a high Logic.
 
 \subsection{Strength (Str)}
 Strength represents the raw physical strength of your character.
 Bulky and buff characters will naturally be strong, and are good for hitting hard and pulling the weight; this trait is key in some physical skills.
 
 Bouncers, brutes, weight lifters, naturally benefit from a high Strength.
-
-\subsection{Wisdom (Wis)}
-Wisdom is your character's situational awareness, intuition, and general gut-feel.
-For this reason, Wisdom applies to a wide variety of situations, as situational awareness and a good intuition will often be enough to get you through a lot of situations.
 
 \section{Derived Traits}
 The derived traits are all based on the core traits, and therefore cannot be chosen. 
@@ -75,7 +74,7 @@ You can find the derived traits on Figure~\ref{fig:derived_traits}.
     \textbf{Trait} & \textbf{Calculation} \\\hline
     Health  ($HP$) & $Con\times 2$ \\
     Fatigue ($FP$) & $Str + Con$ \\
-    Mana    ($MP$) & $Int\times Wis$ \\
+    Mana    ($MP$) & $Log\times Int$ \\
     Speed          & $Athletics / 2$\\
     Parry          & $Fighting/2 + \mathit{DfM}$\\
     Dodge          & $Speed + \mathit{DfM}$
@@ -83,6 +82,10 @@ You can find the derived traits on Figure~\ref{fig:derived_traits}.
     \caption{Derived Traits. (See Section~\ref{sec:defence} for $\mathit{DfM}$)}
     \label{fig:derived_traits}
 \end{figure}
+
+\begin{note}
+    These derived traits are merely the defaults. Different settings or player races in said settings may override any or all of these.
+\end{note}
 
 \subsection{Health (HP)}
 Health represents a character's physical well-being.
@@ -104,7 +107,7 @@ More about mana and how to use it in Section~\ref{sec:mana}.
 \begin{note} 
     If a certain setting calls for it, the MP can be used as ``Mental Points'' or ``Sanity Points'' instead of magical potential.
     This is useful if you want to drain your players sanity over the course of campaigns that feature particularly horrifying things.
-    Though if you plan on using mana for that, consider calculating it as $Con \times Wis$ rather than $Int \times Wis$.
+    Though if you plan on using mana for that, consider calculating it as $Con \times Int$ rather than $Log \times Int$.
 \end{note}
 
 \subsection{Parry}
